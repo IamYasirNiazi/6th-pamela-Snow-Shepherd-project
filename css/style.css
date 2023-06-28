@@ -1,0 +1,914 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  white-space: nowrap !important;
+}
+
+.dataTables_length, .dataTables_filter, .dataTables_info, .dataTables_paginate, .paging_simple_numbers {
+  display: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* top bar */
+body {
+  background: #F0F0F0;
+}
+
+/* Chart */
+.topbar {
+  padding: 8px 6px;
+  background: #fff;
+}
+
+.topbar__inner {
+  gap: 8px;
+}
+
+.topbar__inner p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.topbar img {
+  cursor: pointer;
+}
+
+/* top bar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 9px;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+header p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #000000;
+}
+
+input:focus-visible {
+  outline: none !important;
+}
+
+/* form css common */
+select,
+button,
+input {
+  outline: none;
+  border: 1px solid #000;
+}
+
+.form-group {
+  display: block;
+  /* margin-bottom: 15px; */
+}
+
+.form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group label {
+  position: relative;
+  cursor: pointer;
+}
+
+.form-group label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #000;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 6px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 7px;
+  border-radius: 3px;
+}
+
+.form-group input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  width: 4px;
+  height: 10px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* form css common */
+/* =====form group===== */
+/* <div class="form-group">
+    <input type="checkbox" id="html6">
+    <label for="html6"></label>
+</div> */
+select,
+button {
+  outline: none;
+  border: 1px solid #000;
+}
+
+/* form css common */
+input,
+select {
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  padding: 2.5px 10px;
+}
+
+input::placeholder,
+select,
+p,
+label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #000000;
+  opacity: 0.88;
+  white-space: nowrap;
+}
+
+td, th {
+  background-color: #fff;
+  font-size: 12px;
+}
+
+.common_btn {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  background: #D9D9D9;
+  padding: 3.5px 10.5px;
+  border: 1px solid #000000;
+  color: #000000;
+  white-space: nowrap;
+}
+
+.table_box {
+  background: #DBDBDB;
+  border: 1px solid #000000;
+  padding-bottom: 17px;
+  overflow: scroll;
+  /* height: 100px; */
+}
+
+.table_box div {
+  width: 110%;
+  height: 110%;
+}
+
+table tr td {
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  padding: 2.5px 10px;
+  font-size: 14px;
+}
+
+table input,
+table select {
+  border: none;
+}
+
+select,
+button {
+  outline: none;
+  border: 1px solid #000;
+}
+
+/* form css common */
+.agreement__body {
+  padding: 28px;
+}
+.agreement__body .form__step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+.agreement__body .form__step input, .agreement__body .form__step select {
+  padding: 2.5px 5px;
+  font-size: 14px;
+}
+.agreement__body .agreement__inner {
+  /* width: 100%;
+  max-width: 1440px; */
+}
+
+.analysis__body {
+  padding: 29px 32px 44px;
+}
+.analysis__body .analysis__form select {
+  outline: none;
+  border: 1px solid #000;
+}
+.analysis__body .form__e {
+  gap: 32px;
+  margin-bottom: 35px;
+}
+.analysis__body .form__e label {
+  margin-right: 8px;
+}
+.analysis__body .form__e input {
+  width: 64px;
+}
+.analysis__body .form__e button {
+  width: 91px;
+  height: 25px;
+  font-size: 14px;
+  border: 1px solid #000;
+  outline: none;
+  background: #D9D9D9;
+}
+.analysis__body .form__er {
+  max-width: 440px;
+  margin-bottom: 50px;
+}
+.analysis__body .form__er input {
+  width: 96px;
+  font-size: 14px;
+  padding: 0 4px;
+}
+.analysis__body .form__er label {
+  margin-right: 8px;
+  font-size: 14px;
+}
+.analysis__body .analysis__graph select {
+  border: 1px solid #000;
+  outline: none;
+}
+.analysis__body #myChart {
+  width: 100% !important;
+  height: 705px !important;
+}
+.analysis__body .analysis__desc {
+  width: 151px;
+}
+.analysis__body .analysis__desc table {
+  /* width: 100%; */
+}
+.analysis__body table, .analysis__body td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+.analysis__body .analysis__desc table td input, .analysis__body .analysis__desc table td select {
+  width: 96px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 0 4px;
+}
+.analysis__body .analysis__desc {
+  height: 738px;
+  width: 100%;
+  overflow: scroll;
+  background: #DBDBDB;
+  border: 1px solid #000;
+}
+.analysis__body .analysis__box {
+  width: 1000px;
+  height: 1000px;
+}
+
+.case {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.case .case_container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.case .case_container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 9px;
+}
+.case .case_container header .logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.case .case_container header p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #000000;
+}
+.case .case_container main {
+  background: #F0F0F0;
+  padding: 32px 42px 59px;
+}
+.case .case_container main form label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  white-space: nowrap;
+}
+.case .case_container main form input,
+.case .case_container main form select {
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  padding: 2.5px 10px;
+  width: 100%;
+  font-size: 13px !important;
+}
+.case #exceptional input {
+  height: 62px;
+}
+.case input::placeholder {
+  font-weight: 400;
+  font-size: 12px !important;
+  /* line-height: 21px; */
+  color: #000000;
+  opacity: 0.88;
+  white-space: wrap;
+  object-fit: contain;
+}
+.case .case_container main form a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration-line: underline;
+  color: #316FCB;
+  text-align: end !important;
+  margin-bottom: 26px !important;
+}
+.case .case_container main form button {
+  background: #DBDBDB;
+  border: 1px solid #000000;
+  padding: 3.5px 31.5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.contract__body {
+  padding: 32px 28px 28px;
+  background: #F0F0F0;
+}
+.contract__body .contract__left {
+  width: 100%;
+  max-width: 241px;
+}
+.contract__body .form-group {
+  display: block;
+  /* margin-bottom: 15px; */
+}
+.contract__body .form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+.contract__body .form-group label {
+  position: relative;
+  cursor: pointer;
+}
+.contract__body .form-group label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #000;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 6px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 7px;
+  border-radius: 3px;
+}
+.contract__body .form-group input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  width: 4px;
+  height: 10px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.contract__body .contract__top form {
+  font-size: 14px;
+  line-height: 20px;
+}
+.contract__body .contract__top form select {
+  width: 177px;
+}
+.contract__body .contract__top select, .contract__body .contract__top input {
+  border: 1px solid #000;
+  outline: none;
+}
+.contract__body .contract__middle {
+  margin-left: 78px;
+  margin-right: 17px;
+}
+.contract__body .contract__middle .blank__inn {
+  height: 400px;
+  width: 100%;
+  background: #ffffff;
+  border-right: 1px solid #000;
+}
+.contract__body .contract__middle .blank__box {
+  width: 220px;
+  height: 109px;
+  overflow-y: scroll;
+  border: 1px solid #000;
+}
+.contract__body .contract__middle p {
+  margin-bottom: 8px;
+}
+.contract__body .contract__btns {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.contract__body .contract__btns button {
+  width: 109px;
+  text-align: center;
+  font-size: 14px;
+  background: #D9D9D9;
+  padding: 8px 0;
+  border: 1px solid #000;
+  outline: none;
+}
+.contract__body .contract__info {
+  font-size: 14px;
+  margin: 15px 0 10px;
+}
+.contract__body .contract__info p {
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+.contract__body .contract__info form label {
+  margin-right: 8px;
+}
+.contract__body .uniform__set table, .contract__body .uniform__set td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+.contract__body .uniform__set td {
+  background-color: #fff;
+  padding: 1px 5px;
+}
+.contract__body .uniform__set select {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.contract__body .uniform__set {
+  width: 1376px;
+  height: 122px;
+  overflow: scroll;
+  background: #DBDBDB;
+  border: 1px solid;
+}
+.contract__body .uniForm {
+  width: 1800px;
+  height: 400px;
+}
+.contract__body .contract__input {
+  font-size: 14px;
+}
+.contract__body .contract__input p {
+  font-size: 12px;
+  margin: 10px 0;
+  font-weight: 500;
+}
+.contract__body .contract__input label {
+  margin-right: 8px;
+}
+.contract__body .contract__input button {
+  width: 91px;
+  padding: 4px;
+  background: #D9D9D9;
+  border: 1px solid #000;
+}
+.contract__body .contract__table {
+  width: 1376px;
+  height: 260px;
+  overflow: scroll;
+  background: #D9D9D9;
+  border: 1px solid #000;
+  margin-top: 12px;
+}
+.contract__body .contract__table td {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: #fff;
+}
+.contract__body .contract__table select {
+  border: none;
+  width: none;
+}
+.contract__body .contract__table table, .contract__body .contract__table td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+.contract {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.contract .contract_container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.contract .contract_container main {
+  background-color: #F0F0F0;
+  padding: 24px;
+}
+.contract .contract_container button {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  background: #D9D9D9;
+  border: 1px solid #000000;
+  padding: 3.5px 17.5px;
+  margin-bottom: 25px;
+}
+
+.login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+.login .admin_panel_container {
+  max-width: 500px;
+  margin: auto;
+}
+.login .admin_panel_container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 9px;
+}
+.login .admin_panel_container header .logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.login .admin_panel_container header p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #000000;
+}
+.login .admin_panel_container main {
+  background: #F0F0F0;
+  padding: 56px 0 69px;
+}
+.login .admin_panel_container main form {
+  max-width: 240px;
+  margin: 0 auto;
+}
+.login .admin_panel_container main form label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  white-space: nowrap;
+}
+.login .admin_panel_container main form input,
+.login .admin_panel_container main form select {
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  padding: 2.5px 10px;
+  width: 100%;
+  font-size: 13px !important;
+}
+.login .admin_panel_container main form a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration-line: underline;
+  color: #316FCB;
+  text-align: end !important;
+  margin-bottom: 26px !important;
+}
+.login .admin_panel_container main form button {
+  background: #DBDBDB;
+  border: 1px solid #000000;
+  padding: 3.5px 31.5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.home__body {
+  padding: 15px 21px;
+}
+.home__body .body__left p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.home__body table {
+  width: 100%;
+}
+.home__body table, .home__body th, .home__body td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.home__body .hmBody__inner table td, .home__body th {
+  padding: 3px;
+}
+.home__body table td select {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.home__body .box__top {
+  margin-bottom: 25px;
+}
+.home__body .blank__box {
+  height: 522px;
+  width: 100%;
+  overflow: scroll;
+  border: 1px solid #000;
+  /* border-top: 0px; */
+}
+.home__body .box__inner {
+  height: 1000px;
+  width: 800px;
+  background-color: #DBDBDB;
+}
+.home__body .box__bottom table td {
+  height: 25px;
+}
+.home__body .body__right .blank__box {
+  height: 185px;
+}
+.home__body .body__right form .field {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 32px;
+}
+.home__body .body__right .field input {
+  border: 1px solid #000;
+  background: #fff;
+  outline: none;
+  margin-left: 10px;
+  padding: 0 4px;
+  height: 25px;
+  width: 356px;
+}
+.home__body .body__right .field button, .home__body .body__right .box__end button {
+  width: 91px;
+  height: 25px;
+  font-size: 14px;
+  background: #D9D9D9;
+  border: 1px solid #000;
+}
+.home__body .body__right .box__end button {
+  padding: 10px 11px;
+  width: unset;
+  height: unset;
+  margin-left: 32px;
+}
+.home__body .blank__box.bottom__box {
+  height: 681px;
+  width: 100%;
+}
+.home__body .blank__box.bottom__box .box__inner {
+  width: 3000px;
+}
+
+.media main {
+  padding: 28px 32px;
+}
+.media .invoice {
+  border: 1px solid #B4B4B4;
+  padding: 20px;
+  max-width: 664px;
+}
+.media .box {
+  border: 1px solid #B4B4B4;
+  padding: 12px;
+}
+
+.menu {
+  background-color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.menu .menu_container {
+  max-width: 500px;
+  margin: auto;
+}
+.menu .menu_container header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  padding: 4px 27px;
+  background-color: #fff;
+}
+.menu .menu_container header p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #000000;
+}
+.menu .menu_container main {
+  background: #F0F0F0;
+  padding: 47px 30px 55px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+.menu .menu_container main button {
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  padding: 20px 48px;
+  white-space: nowrap;
+}
+
+.performance__body {
+  padding: 12px 32px 32px;
+}
+.performance__body #myChart {
+  width: 100% !important;
+  height: 360px !important;
+}
+
+.point_container {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.point_container main {
+  background: #F0F0F0;
+  padding: 28px 20px;
+}
+.point_container .row-two-table {
+  margin-right: -0.4rem !important;
+}
+.point_container .row-second {
+  display: flex;
+  gap: 0 !important;
+  margin-top: 1rem;
+}
+.point_container main p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #000000;
+}
+.point_container form label {
+  font-weight: 400;
+  font-size: 14px;
+  white-space: nowrap;
+  color: #000000;
+}
+.point_container form input,
+.point_container form select {
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  padding: 2.5px 10px;
+}
+.point_container input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+.point_container input.exceptional {
+  width: 78px !important;
+}
+.point_container button {
+  border: 1px solid #000000;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  padding: 3.5px 31.5px;
+  white-space: nowrap;
+}
+.point_container .warning_btn {
+  background: #EDE490;
+}
+.point_container .success_btn {
+  background: #91ED90;
+}
+.point_container .danger_btn {
+  background: #EF8080;
+}
+.point_container .common_btn {
+  background: #D9D9D9;
+}
+.point_container .layout {
+  border: 1px solid #B4B4B4;
+  padding: 12px;
+}
+.point_container input {
+  accent-color: #1C1B1F;
+}
+.point_container input.number {
+  width: 46px;
+  padding: 2.5px 0;
+}
+.point_container input::placeholder.number {
+  text-align: center !important;
+}
+.point_container .table_box {
+  background: #DBDBDB;
+  border: 1px solid #000000;
+  padding-bottom: 17px;
+  overflow: scroll;
+  height: 100px;
+}
+.point_container .table_box div {
+  width: 1300px;
+  height: 500px;
+}
+.point_container table tr td {
+  background: #FFFFFF;
+  border: 1px solid #000000;
+}
+.point_container table input,
+.point_container table select {
+  border: none;
+}
+.point_container .no_border table tr td {
+  border: none !important;
+  padding: 3px;
+  background-color: transparent;
+}
+.point_container .no_border table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+.point_container table input,
+.point_container table select,
+.point_container table span {
+  border: 1px solid black;
+  background: #FFFFFF;
+}

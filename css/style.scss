@@ -1,0 +1,1125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    white-space: nowrap !important;
+}
+
+.dataTables_length, .dataTables_filter, .dataTables_info, .dataTables_paginate, .paging_simple_numbers{
+    display: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* top bar */
+body {
+    background: #F0F0F0;
+}
+
+
+
+/* Chart */
+
+.topbar {
+    padding: 8px 6px;
+    background: #fff;
+}
+
+.topbar__inner {
+    gap: 8px;
+}
+
+.topbar__inner p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.topbar img {
+    cursor: pointer;
+}
+
+/* top bar */
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 9px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+header p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000000;
+}
+
+input:focus-visible {
+    outline: none !important;
+}
+
+
+/* form css common */
+select,
+button,
+input {
+    outline: none;
+    border: 1px solid #000;
+}
+
+
+.form-group {
+    display: block;
+    /* margin-bottom: 15px; */
+}
+
+.form-group input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.form-group label {
+    position: relative;
+    cursor: pointer;
+}
+
+.form-group label:before {
+    content: '';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid #000;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 6px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 7px;
+    border-radius: 3px;
+}
+
+.form-group input:checked+label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    width: 4px;
+    height: 10px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* form css common */
+
+
+/* =====form group===== */
+
+/* <div class="form-group">
+    <input type="checkbox" id="html6">
+    <label for="html6"></label>
+</div> */
+
+select,
+button {
+    outline: none;
+    border: 1px solid #000;
+}
+
+/* form css common */
+
+input,
+select {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    padding: 2.5px 10px;
+
+}
+
+input::placeholder,
+select,
+p,
+label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000000;
+    opacity: 0.88;
+    white-space: nowrap;
+}
+
+td, th{
+    background-color: #fff;
+    font-size: 12px;
+}
+
+.common_btn {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    background: #D9D9D9;
+    padding: 3.5px 10.5px;
+    border: 1px solid #000000;
+    color: #000000;
+    white-space: nowrap;
+}
+
+.table_box {
+    background: #DBDBDB;
+    border: 1px solid #000000;
+    padding-bottom: 17px;
+    overflow: scroll;
+    /* height: 100px; */
+}
+
+.table_box div {
+    width: 110%;
+    height: 110%;
+}
+
+table tr td {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    padding: 2.5px 10px;
+    font-size: 14px;
+}
+
+table input,
+table select {
+    border: none;
+}
+
+select,
+button {
+    outline: none;
+    border: 1px solid #000;
+}
+
+/* form css common */
+
+
+
+
+// -------------------------------------------
+
+
+
+
+// Agreement__body
+.agreement__body{
+
+    padding: 28px;
+    
+    .form__step{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+    
+    .form__step input, .form__step select{
+        padding: 2.5px 5px;
+        font-size: 14px;
+    }
+    
+    .agreement__inner{
+        /* width: 100%;
+        max-width: 1440px; */
+    }
+}
+
+
+
+
+// Analysis Body
+.analysis__body{
+
+    padding: 29px 32px 44px;
+    
+    .analysis__form select{
+        outline: none;
+        border: 1px solid #000;
+    }
+    
+    .form__e{
+        gap: 32px;
+        margin-bottom: 35px;
+    }
+    
+    .form__e label{
+        margin-right: 8px;
+    }
+    
+    .form__e input{
+        width: 64px;
+    }
+    
+    .form__e button{
+        width: 91px;
+        height: 25px;
+        font-size: 14px;
+        border: 1px solid #000;
+        outline: none;
+        background: #D9D9D9;
+    }
+    
+    .form__er{
+        max-width: 440px;
+        margin-bottom: 50px;
+    }
+    
+    .form__er input{
+        width: 96px;
+        font-size: 14px;
+        padding: 0 4px;
+    }
+    
+    .form__er label{
+        margin-right: 8px;
+        font-size: 14px;
+    }
+    
+    .analysis__graph select{
+        border: 1px solid #000;
+        outline: none;
+    }
+    
+    #myChart{
+        width: 100% !important; 
+        height: 705px !important;
+    }
+    
+    .analysis__desc{
+        width: 151px;
+    }
+    
+    .analysis__desc table{
+        /* width: 100%; */
+    }
+    
+    table, td{
+        border: 1px solid #000;
+        border-collapse: collapse;
+    }
+    
+    .analysis__desc table td input, .analysis__desc table td select{
+        width: 96px;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        padding: 0 4px;
+    }
+    
+    .analysis__desc{
+        height: 738px;
+        width: 100%;
+        overflow: scroll;
+        background: #DBDBDB;
+        border: 1px solid #000;
+    }
+    
+    .analysis__box{
+        width: 1000px;
+        height: 1000px;
+    } 
+}
+
+
+
+
+// Case
+.case{
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+    .case_container {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .case_container header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px 9px;
+    }
+    
+    .case_container header .logo {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    
+    .case_container header p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: #000000;
+    }
+    
+    .case_container main {
+        background: #F0F0F0;
+        padding: 32px 42px 59px;
+    }
+    
+    .case_container main form label {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+        white-space: nowrap;
+    }
+    
+    .case_container main form input,
+    .case_container main form select {
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        padding: 2.5px 10px;
+        width: 100%;
+        font-size: 13px !important;
+    
+    }
+    
+    #exceptional input {
+        height: 62px;
+    }
+    
+    input::placeholder {
+        font-weight: 400;
+        font-size: 12px !important;
+        /* line-height: 21px; */
+        color: #000000;
+        opacity: 0.88;
+        white-space: wrap;
+        object-fit: contain;
+    }
+    
+    .case_container main form a {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration-line: underline;
+        color: #316FCB;
+        text-align: end !important;
+        margin-bottom: 26px !important;
+    }
+    
+    .case_container main form button {
+        background: #DBDBDB;
+        border: 1px solid #000000;
+        padding: 3.5px 31.5px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+    }
+}
+
+
+
+
+// Contract
+.contract__body{
+
+    padding: 32px 28px 28px;
+    background: #F0F0F0;
+    
+    .contract__left{
+        width: 100%;
+        max-width: 241px;
+    }
+    
+    .form-group {
+        display: block;
+        /* margin-bottom: 15px; */
+      }
+      
+      .form-group input {
+        padding: 0;
+        height: initial;
+        width: initial;
+        margin-bottom: 0;
+        display: none;
+        cursor: pointer;
+      }
+      
+      .form-group label {
+        position: relative;
+        cursor: pointer;
+      }
+      
+      .form-group label:before {
+        content:'';
+        -webkit-appearance: none;
+        background-color: transparent;
+        border: 2px solid #000;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+        padding: 6px;
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        cursor: pointer;
+        margin-right: 7px;
+        border-radius: 3px;
+      }
+      
+      .form-group input:checked + label:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 4px;
+        left: 6px;
+        width: 4px;
+        height: 10px;
+        border: solid #000;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+      }
+    
+      .contract__top form{
+        font-size: 14px;
+        line-height: 20px;
+      }
+    
+      .contract__top form select{
+        width: 177px;
+      }
+    
+      .contract__top select, .contract__top input{
+        border: 1px solid #000;
+        outline: none;
+      }
+    
+      .contract__middle{
+        margin-left: 78px;
+        margin-right: 17px;
+      }
+    
+      .contract__middle .blank__inn{
+        height: 400px;
+        width: 100%;
+        background: #ffffff;
+        border-right: 1px solid #000;
+      }
+    
+      .contract__middle .blank__box{
+        width: 220px;
+        height: 109px;
+        overflow-y: scroll;
+        border: 1px  solid #000;
+      }
+    
+      .contract__middle p{
+        margin-bottom: 8px;
+      }
+    
+      .contract__btns{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+    
+      .contract__btns button{
+        width: 109px;
+        text-align: center;
+        font-size: 14px;
+        background: #D9D9D9;
+        padding: 8px 0;
+        border: 1px solid #000;
+        outline: none;
+      }
+    
+      .contract__info{
+        font-size: 14px;
+        margin: 15px 0 10px;
+      }
+    
+      .contract__info p{
+        margin-bottom: 8px;
+        font-size: 12px;
+      }
+    
+      .contract__info form label{
+        margin-right: 8px;
+      } 
+    
+      .uniform__set table, .uniform__set td{
+        border: 1px solid #000;
+        border-collapse: collapse;
+      }
+    
+      .uniform__set td{
+        background-color: #fff;
+        padding: 1px 5px;
+      }
+    
+      .uniform__set select{
+        border: none;
+        outline: none;
+        width: 100%;
+      }
+    
+      .uniform__set{
+        width: 1376px;
+        height: 122px;
+        overflow: scroll;
+        background: #DBDBDB;
+        border: 1px solid;
+      }
+    
+      .uniForm{
+        width: 1800px;
+        height: 400px;
+      }
+    
+      .contract__input{
+        font-size: 14px;
+      }
+    
+      .contract__input p{
+        font-size: 12px;
+        margin: 10px 0;
+        font-weight: 500;
+      }
+    
+      .contract__input label{
+        margin-right: 8px;
+      } 
+    
+      .contract__input button{
+        width: 91px;
+        padding: 4px;
+        background: #D9D9D9;
+        border: 1px solid #000;
+      }
+    
+      .contract__table{
+        width: 1376px;
+        height: 260px;
+        overflow: scroll;
+        background: #D9D9D9;
+        border: 1px solid #000;
+        margin-top: 12px;
+      }
+    
+      .contract__table td{
+        border: none;
+        outline: none;
+        width: 100%;
+        background: #fff  ;
+      }
+    
+      .contract__table select{
+        border: none;
+        width: none;
+      }
+    
+      .contract__table table, .contract__table td{
+        border: 1px solid #000;
+        border-collapse: collapse;
+      }
+
+}
+
+
+
+
+// Contract
+.contract{
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+    .contract_container {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    
+    .contract_container main {
+        background-color: #F0F0F0;
+        padding: 24px;
+    }
+    
+    .contract_container button {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+        background: #D9D9D9;
+        border: 1px solid #000000;
+        padding: 3.5px 17.5px;
+        margin-bottom: 25px;
+    }
+}
+
+
+
+
+// Login
+.login{
+    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    
+    .admin_panel_container {
+        max-width: 500px;
+        margin: auto;
+    }
+    
+    .admin_panel_container header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px 9px;
+    }
+    
+    .admin_panel_container header .logo {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    
+    .admin_panel_container header p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: #000000;
+    }
+    
+    .admin_panel_container main {
+        background: #F0F0F0;
+        padding: 56px 0 69px;
+    }
+    
+    .admin_panel_container main form {
+        max-width: 240px;
+        margin: 0 auto;
+    }
+    
+    .admin_panel_container main form label {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+        white-space: nowrap;
+    }
+    
+    .admin_panel_container main form input,
+    .admin_panel_container main form select {
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        padding: 2.5px 10px;
+        width: 100%;
+        font-size: 13px !important;
+    
+    }
+    
+    .admin_panel_container main form a {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration-line: underline;
+        color: #316FCB;
+        text-align: end !important;
+        margin-bottom: 26px !important;
+    }
+    
+    .admin_panel_container main form button {
+        background: #DBDBDB;
+        border: 1px solid #000000;
+        padding: 3.5px 31.5px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+    }
+}
+
+
+
+
+// Home
+.home__body{
+
+    padding: 15px 21px;
+    
+    .body__left p{
+        font-size: 14px;
+        margin-bottom: 8px;
+        font-weight: 600;
+    
+    }
+    
+    table{
+        width: 100%;
+    }
+    
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    
+    .hmBody__inner table td, th{
+        padding: 3px;
+    }
+    
+     table td select{
+        width: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+    }
+    
+    .box__top{
+        margin-bottom: 25px;
+    }
+    
+    .blank__box{
+        height: 522px;
+        width: 100%;
+        overflow: scroll;
+        border: 1px solid #000;
+        /* border-top: 0px; */
+    }
+    
+    .box__inner{
+        height: 1000px;
+        width: 800px;   
+        background-color: #DBDBDB;
+    }
+    
+    .box__bottom table td{
+        height: 25px;
+    }
+    
+    .body__right .blank__box{
+        height: 185px;
+    }
+    
+    .body__right form .field{
+        margin-bottom: 20px;
+        display: flex;
+        gap: 32px;
+    }
+    
+    .body__right .field input{
+        border: 1px solid #000;
+        background: #fff;
+        outline: none;
+        margin-left: 10px;
+        padding: 0 4px;
+        height: 25px;
+        width: 356px;
+    }
+    
+    .body__right .field button, .body__right .box__end button{
+        width: 91px;
+        height: 25px;
+        font-size: 14px;
+        background: #D9D9D9;
+        border: 1px solid #000;
+    }
+    
+    .body__right .box__end button{
+        padding: 10px 11px;
+        width: unset;
+        height: unset;
+        margin-left: 32px;
+    }
+    
+    .blank__box.bottom__box{
+        height: 681px;
+        width: 100%;
+    }
+    
+    .blank__box.bottom__box .box__inner{
+        width: 3000px;
+    }
+}
+
+
+
+
+// Media
+.media{
+
+    main {
+        padding: 28px 32px;
+    }
+    
+    .invoice {
+        border: 1px solid #B4B4B4;
+        padding: 20px;
+        max-width: 664px;
+    }
+    
+    .box {
+        border: 1px solid #B4B4B4;
+        padding: 12px;
+    }
+}
+
+
+
+
+// Menu
+.menu{
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+    .menu_container {
+        max-width: 500px;
+        margin: auto;
+    }
+    
+    .menu_container header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 6px;
+        padding: 4px 27px;
+        background-color: #fff;
+    }
+    
+    .menu_container header p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: #000000;
+    }
+    
+    .menu_container main {
+        background: #F0F0F0;
+        padding: 47px 30px 55px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 13px;
+    }
+    
+    .menu_container main button {
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        border-radius: 3px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        color: #000000;
+        padding: 20px 48px;
+        white-space: nowrap;
+    }
+}
+
+
+
+
+// Performance__body
+.performance__body{
+    padding: 12px 32px 32px;
+    
+    #myChart{
+        width: 100% !important; 
+        height: 360px !important;
+    }
+}
+
+
+
+
+// Point_container
+.point_container{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #fff;
+    
+    main {
+        background: #F0F0F0;
+        // padding: 28px 32px;
+        padding: 28px 20px;
+    }
+
+    .row-two-table{
+        margin-right: -.4rem !important;
+    }
+
+    .row-second{
+        display: flex;
+        gap: 0 !important;
+        margin-top: 1rem;
+    }
+    
+    main p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: #000000;
+    }
+    
+    
+    
+    form label {
+        font-weight: 400;
+        font-size: 14px;
+        white-space: nowrap;
+        color: #000000;
+    }
+    
+    form input,
+    form select {
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        padding: 2.5px 10px;
+    }
+    
+    input::placeholder {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+    }
+    
+    input.exceptional {
+        width: 78px !important;
+    }
+    
+    button {
+        border: 1px solid #000000;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+        padding: 3.5px 31.5px;
+        white-space: nowrap;
+    }
+    
+    .warning_btn {
+        background: #EDE490;
+    
+    }
+    
+    .success_btn {
+        background: #91ED90;
+    }
+    
+    .danger_btn {
+        background: #EF8080;
+    }
+    
+     .common_btn {
+        background: #D9D9D9;
+    }
+    
+    .layout {
+        border: 1px solid #B4B4B4;
+        padding: 12px;
+    }
+    
+
+    input {
+        accent-color: #1C1B1F;
+    }
+    
+    input.number {
+        width: 46px;
+        padding: 2.5px 0;
+    }
+    
+    input::placeholder.number {
+        text-align: center !important;
+    }
+    
+    .table_box {
+        background: #DBDBDB;
+        border: 1px solid #000000;
+        padding-bottom: 17px;
+        overflow: scroll;
+        height: 100px;
+    }
+    
+    .table_box div {
+        width: 1300px;
+        height: 500px;
+    }
+    
+    table tr td {
+        background: #FFFFFF;
+        border: 1px solid #000000;
+    }
+    
+    table input,
+    table select {
+        border: none;
+    }
+    
+    .no_border table tr td {
+        border: none !important;
+        padding: 3px;
+        background-color: transparent;
+    
+    }
+    
+    .no_border table {
+        border-collapse: separate;
+        border-spacing: 0 10px;
+    }
+    
+    table input,
+    table select,
+    table span {
+        border: 1px solid black;
+        background: #FFFFFF;
+    }
+
+}
+
+
+
