@@ -7,6 +7,8 @@
     <title>invoice page (Pg 12)</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0-alpha3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
     <!-- <link rel="stylesheet" href="/style.css"> -->
     <!-- <link rel="stylesheet" href="media.css"> -->
     <link rel="stylesheet" href="../css/style.css">
@@ -120,27 +122,34 @@
                 <div style="height:126px ;" class="table_box">
                     <div>
 
-                        <table>
-                            <tbody>
+                        <table id="tableMediaInvoiceOne">
+                            <thead>
                                 <tr>
 
-                                    <td><select class="border-0">
+                                    <!-- <td><select class="border-0">
                                             <option value="">統編</option>
                                             <option value="">統編</option>
                                             <option value="">統編</option>
-                                        </select></td>
-                                    <td><select class="border-0">
+                                        </select></td> -->
+                                        <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">統編</th>
+
+                                    <!-- <td><select class="border-0">
                                             <option value="">發票抬頭</option>
                                             <option value="">發票抬頭</option>
                                             <option value="">發票抬頭</option>
-                                        </select></td>
-                                    <td><select class="border-0">
+                                        </select></td> -->
+                                        <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">發票抬頭</th>
+
+                                    <!-- <td><select class="border-0">
                                             <option value="">地址</option>
                                             <option value="">地址</option>
                                             <option value="">地址</option>
-                                        </select></td>
+                                        </select></td> -->
+                                        <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">地址</th>
 
                                 </tr>
+                            </thead>
+                            <tbody>
                                 <tr>
 
                                     <td>12345678</td>
@@ -159,101 +168,138 @@
             <div style="height: 40vh;font-size: 10px;white-space:nowrap;" class="table_box long_table">
                 <div>
 
-                    <table>
-                        <tbody>
+                    <table id="tableMediaInvoiceTwo">
+                        <thead>
                             <tr>
-                                <td class="p-0"><select class="border-0">
+                                <!-- <td class="p-0"><select class="border-0">
                                         <option value="">匯出</option>
                                         <option value="">匯出</option>
                                         <option value="">匯出</option>
-                                    </select></td>
-                                <td class="p-0"><select class="border-0">
+                                    </select></td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">匯出</th>
+
+                                <!-- <td class="p-0"><select class="border-0">
                                         <option value="">開立抬頭</option>
                                         <option value="">開立抬頭</option>
                                         <option value="">開立抬頭</option>
-                                    </select></td>
-                                <td class="p-0"><select class="border-0">
+                                    </select></td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">開立抬頭</th>
+
+                                <!-- <td class="p-0"><select class="border-0">
                                         <option value="">發票號碼</option>
                                         <option value="">發票號碼</option>
                                         <option value="">發票號碼</option>
-                                    </select></td>
-                                <td class="p-0"><select class="border-0">
+                                    </select></td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">發票號碼</th>
+
+                                <!-- <td class="p-0"><select class="border-0">
                                         <option value="">發票日期</option>
                                         <option value="">發票日期</option>
                                         <option value="">發票日期</option>
-                                    </select></td>
-                                <td class="p-0"><select class="border-0">
+                                    </select></td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">發票日期</th>
+
+                                <!-- <td class="p-0"><select class="border-0">
                                         <option value="">客戶案名</option>
                                         <option value="">客戶案名</option>
                                         <option value="">客戶案名</option>
-                                    </select></td>
-                                <td class="p-0"><select class="border-0">
+                                    </select></td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">客戶案名</th>
+
+                                <!-- <td class="p-0"><select class="border-0">
                                         <option value="">統編</option>
                                         <option value="">統編</option>
                                         <option value="">統編</option>
-                                    </select></td>
-                                <td class="p-0"><select class="border-0">
+                                    </select></td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">統編</th>
+
+                                <!-- <td class="p-0"><select class="border-0">
                                         <option value="">發票抬頭</option>
                                         <option value="">發票抬頭</option>
                                         <option value="">發票抬頭</option>
-                                    </select></td>
-                                <td class="p-0"><select class="border-0">
+                                    </select></td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">發票抬頭</th>
+
+                                <!-- <td class="p-0"><select class="border-0">
                                         <option value="">地址</option>
                                         <option value="">地址</option>
                                         <option value="">地址</option>
-                                    </select></td>
-                                <td class="p-0"><select class="border-0">
+                                    </select></td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">地址</th>
+
+                                <!-- <td class="p-0"><select class="border-0">
                                         <option value="">點位</option>
                                         <option value="">點位</option>
                                         <option value="">點位</option>
-                                    </select></td>
-                                <td class="p-0"><select class="border-0">
+                                    </select></td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">點位</th>
+
+                                <!-- <td class="p-0"><select class="border-0">
                                         <option value="">總計</option>
                                         <option value="">總計</option>
                                         <option value="">總計</option>
-                                    </select></td>
-                                <td class="p-0"><select class="border-0">
+                                    </select></td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">總計</th>
+
+                                <!-- <td class="p-0"><select class="border-0">
                                         <option value="">小計</option>
                                         <option value="">小計</option>
                                         <option value="">小計</option>
-                                    </select></td>
-                                <td class="p-0"><select class="border-0">
+                                    </select></td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">小計</th>
+
+                                <!-- <td class="p-0"><select class="border-0">
                                         <option value="">稅額</option>
                                         <option value="">稅額</option>
                                         <option value="">稅額</option>
-                                    </select></td>
-                                <td class="p-0"><select class="border-0">
+                                    </select></td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">稅額</th>
+
+                                <!-- <td class="p-0"><select class="border-0">
                                         <option value="">列印</option>
                                         <option value="">列印</option>
                                         <option value="">列印</option>
-                                    </select></td>
-                                <td class="p-0"><select class="border-0">
+                                    </select></td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">列印</th>
+
+                                <!-- <td class="p-0"><select class="border-0">
                                         <option value="">認列</option>
                                         <option value="">認列</option>
                                         <option value="">認列</option>
-                                    </select></td>
-                                <td class="p-0"><select class="border-0">
+                                    </select></td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">認列</th>
+
+                                <!-- <td class="p-0"><select class="border-0">
                                         <option value="">註銷</option>
                                         <option value="">註銷</option>
                                         <option value="">註銷</option>
-                                    </select></td>
-                                <td class="p-0"><select class="border-0">
+                                    </select></td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">註銷</th>
+
+                                <!-- <td class="p-0"><select class="border-0">
                                         <option value="">折讓</option>
                                         <option value="">折讓</option>
                                         <option value="">折讓</option>
-                                    </select></td>
-                                <td class="p-0"><select class="border-0">
+                                    </select></td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">折讓</th>
+
+                                <!-- <td class="p-0"><select class="border-0">
                                         <option value="">折讓金額</option>
                                         <option value="">折讓金額</option>
                                         <option value="">折讓金額</option>
-                                    </select></td>
-                                <td class="p-0"><select class="border-0">
+                                    </select></td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">折讓金額</th>
+
+                                <!-- <td class="p-0"><select class="border-0">
                                         <option value="">備註</option>
                                         <option value="">備註</option>
                                         <option value="">備註</option>
-                                    </select></td>
+                                    </select></td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">備註</th>
 
                             </tr>
+                        </thead>
+                        <tbody>
                             <tr>
                                 <td class="text-center p-0"><input type="checkbox"></td>
                                 <td class="p-0">迦勒廣告事業有限公司</td>
@@ -282,8 +328,14 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+    <script>$('#tableMediaInvoiceOne').DataTable();</script>
+    <script>$('#tableMediaInvoiceTwo').DataTable();</script>
 </body>
 
 </html>

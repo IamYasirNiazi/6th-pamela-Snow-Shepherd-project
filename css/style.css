@@ -11,8 +11,13 @@ body {
   white-space: nowrap !important;
 }
 
-.dataTables_length, .dataTables_filter, .dataTables_info, .dataTables_paginate, .paging_simple_numbers {
+.dataTables_length, .dataTables_filter,
+.dataTables_info, .dataTables_paginate, .paging_simple_numbers {
   display: none !important;
+}
+
+table.dataTable {
+  margin-top: 0 !important;
 }
 
 h1,
@@ -175,9 +180,17 @@ label {
   white-space: nowrap;
 }
 
-td, th {
+td {
   background-color: #fff;
   font-size: 12px;
+  padding: 4px 15px;
+}
+
+th {
+  background-color: #fff;
+  font-size: 12px;
+  padding: 4px 15px;
+  border: 1px solid #222;
 }
 
 .common_btn {
@@ -201,7 +214,6 @@ td, th {
 
 .table_box div {
   width: 110%;
-  height: 110%;
 }
 
 table tr td {
@@ -321,6 +333,7 @@ button {
   height: 100vh;
   display: flex;
   align-items: center;
+  background-color: #fff;
 }
 .case .case_container {
   max-width: 500px;
@@ -566,6 +579,7 @@ button {
   height: 100vh;
   display: flex;
   align-items: center;
+  background-color: #fff;
 }
 .contract .contract_container {
   max-width: 500px;
@@ -887,7 +901,6 @@ button {
 }
 .point_container .table_box div {
   width: 1300px;
-  height: 500px;
 }
 .point_container table tr td {
   background: #FFFFFF;

@@ -9,7 +9,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0-alpha3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
     <!-- <link rel="stylesheet" href="./Contract.css"> -->
     <!-- <link rel="stylesheet" href="../style.css"> -->
     <link rel="stylesheet" href="../css/style.css">
@@ -162,90 +163,111 @@
                 </div>
                 <div class="uniform__set">
                     <div class="uniForm">
-                        <table>
-                            <tBody>
+                        <table id="tableContractOne">
+                            <thead>
                                 <tr>
-                                    <td>
+                                    <!-- <td>
                                         <select name="" id="">
                                             <option value="">統一編號</option>
                                             <option value="">統一編號</option>
                                             <option value="">統一編號</option>
                                             <option value="">統一編號</option>
                                         </select>
-                                    </td>
-                                    <td>
+                                    </td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">統一編號</th>
+
+                                    <!-- <td>
                                         <select name="" id="">
                                             <option value="">公司抬頭</option>
                                             <option value="">公司抬頭</option>
                                             <option value="">公司抬頭</option>
                                             <option value="">公司抬頭</option>
                                         </select>
-                                    </td>
-                                    <td>
+                                    </td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">公司抬頭</th>
+
+                                    <!-- <td>
                                         <select name="" id="">
                                             <option value="">負責人</option>
                                             <option value="">負責人</option>
                                             <option value="">負責人</option>
                                             <option value="">負責人</option>
                                         </select>
-                                    </td>
-                                    <td>
+                                    </td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">負責人</th>
+
+                                    <!-- <td>
                                         <select name="" id="">
                                             <option value="">公司電話</option>
                                             <option value="">公司電話</option>
                                             <option value="">公司電話</option>
                                             <option value="">公司電話</option>
                                         </select>
-                                    </td>
-                                    <td>
+                                    </td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">公司電話</th>
+
+                                    <!-- <td>
                                         <select name="" id="">
                                             <option value="">統編地址</option>
                                             <option value="">統編地址</option>
                                             <option value="">統編地址</option>
                                             <option value="">統編地址</option>
                                         </select>
-                                    </td>
-                                    <td>
+                                    </td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">統編地址</th>
+
+                                    <!-- <td>
                                         <select name="" id="">
                                             <option value="">郵遞區號</option>
                                             <option value="">郵遞區號</option>
                                             <option value="">郵遞區號</option>
                                             <option value="">郵遞區號</option>
                                         </select>
-                                    </td>
-                                    <td>
+                                    </td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">郵遞區號</th>
+
+                                    <!-- <td>
                                         <select name="" id="">
                                             <option value="">郵寄地址</option>
                                             <option value="">郵寄地址</option>
                                             <option value="">郵寄地址</option>
                                             <option value="">郵寄地址</option>
                                         </select>
-                                    </td>
-                                    <td>
+                                    </td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">郵寄地址</th>
+
+                                    <!-- <td>
                                         <select name="" id="">
                                             <option value="">窗口/聯絡人</option>
                                             <option value="">窗口/聯絡人</option>
                                             <option value="">窗口/聯絡人</option>
                                             <option value="">窗口/聯絡人</option>
                                         </select>
-                                    </td>
-                                    <td>
+                                    </td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">窗口/聯絡人</th>
+
+                                    <!-- <td>
                                         <select name="" id="">
                                             <option value="">窗口電話</option>
                                             <option value="">窗口電話</option>
                                             <option value="">窗口電話</option>
                                             <option value="">窗口電話</option>
                                         </select>
-                                    </td>
-                                    <td>
+                                    </td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">窗口電話</th>
+
+                                    <!-- <td>
                                         <select name="" id="">
                                             <option value="">備註</option>
                                             <option value="">備註</option>
                                             <option value="">備註</option>
                                             <option value="">備註</option>
                                         </select>
-                                    </td>
+                                    </td> -->
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">備註</th>
                                 </tr>
+                            </thead>
+                            <tbody>
                                 <tr>
                                     <td>12345678</td>
                                     <td>新濠建設事業股份有限公司</td>
@@ -258,7 +280,7 @@
                                     <td>0912-345-678</td>
                                     <td></td>
                                 </tr>
-                            </tBody>
+                            </tbody>
                         </table>
                     </div>
                 </div>
@@ -457,187 +479,231 @@
             </div>  
             <div class="contract__table">
                 <div>
-                    <table>
-                        <tbody>
+                    <table id="tableContractTwo">
+                        <thead>
                             <tr>
-                                <td>
+                                <!-- <td>
                                     <select name="" id="">
                                         <option value="">續約提醒</option>
                                         <option value="">續約提醒</option>
                                         <option value="">續約提醒</option>
                                         <option value="">續約提醒</option>
                                     </select>
-                                </td>
-                                <td>
+                                </td> -->
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">續約提醒</th>
+                                
+                                <!-- <td>
                                     <select name="" id="">
                                         <option value="">群組業務</option>
                                         <option value="">群組業務</option>
                                         <option value="">群組業務</option>
                                         <option value="">群組業務</option>
                                     </select>
-                                </td>
-                                <td>
-                                    <select name="" id="">
-                                        <option value="">點位</option>
-                                        <option value="">點位</option>
-                                        <option value="">點位</option>
-                                        <option value="">點位</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <select name="" id="">
-                                        <option value="">版面</option>
-                                        <option value="">版面</option>
-                                        <option value="">版面</option>
-                                        <option value="">版面</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <select name="" id="">
-                                        <option value="">起租日</option>
-                                        <option value="">起租日</option>
-                                        <option value="">起租日</option>
-                                        <option value="">起租日</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <select name="" id="">
-                                        <option value="">到期日</option>
-                                        <option value="">到期日</option>
-                                        <option value="">到期日</option>
-                                        <option value="">到期日</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <select name="" id="">
-                                        <option value="">狀態</option>
-                                        <option value="">狀態</option>
-                                        <option value="">狀態</option>
-                                        <option value="">狀態</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <select name="" id="">
-                                        <option value="">成本</option>
-                                        <option value="">成本</option>
-                                        <option value="">成本</option>
-                                        <option value="">成本</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <select name="" id="">
-                                        <option value="">股紅金額</option>
-                                        <option value="">股紅金額</option>
-                                        <option value="">股紅金額</option>
-                                        <option value="">股紅金額</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <select name="" id="">
-                                        <option value="">股紅</option>
-                                        <option value="">股紅</option>
-                                        <option value="">股紅</option>
-                                        <option value="">股紅</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <select name="" id="">
-                                        <option value="">付款方式</option>
-                                        <option value="">付款方式</option>
-                                        <option value="">付款方式</option>
-                                        <option value="">付款方式</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <select name="" id="">
-                                        <option value="">支票號碼</option>
-                                        <option value="">支票號碼</option>
-                                        <option value="">支票號碼</option>
-                                        <option value="">支票號碼</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <select name="" id="">
-                                        <option value="">承租方</option>
-                                        <option value="">承租方</option>
-                                        <option value="">承租方</option>
-                                        <option value="">承租方</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <select name="" id="">
-                                        <option value="">稅金</option>
-                                        <option value="">稅金</option>
-                                        <option value="">稅金</option>
-                                        <option value="">稅金</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <select name="" id="">
-                                        <option value="">稅後毛利</option>
-                                        <option value="">稅後毛利</option>
-                                        <option value="">稅後毛利</option>
-                                        <option value="">稅後毛利</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <select name="" id="">
-                                        <option value="">收款日期</option>
-                                        <option value="">收款日期</option>
-                                        <option value="">收款日期</option>
-                                        <option value="">收款日期</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <select name="" id="">
-                                        <option value="">確認收款</option>
-                                        <option value="">確認收款</option>
-                                        <option value="">確認收款</option>
-                                        <option value="">確認收款</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <select name="" id="">
-                                        <option value="">合約備註</option>
-                                        <option value="">合約備註</option>
-                                        <option value="">合約備註</option>
-                                        <option value="">合約備註</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <select name="" id="">
-                                        <option value="">入帳日期</option>
-                                        <option value="">入帳日期</option>
-                                        <option value="">入帳日期</option>
-                                        <option value="">入帳日期</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <select name="" id="">
-                                        <option value="">待開立發票日期</option>
-                                        <option value="">待開立發票日期</option>
-                                        <option value="">待開立發票日期</option>
-                                        <option value="">待開立發票日期</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <select name="" id="">
-                                        <option value="">發票號碼</option>
-                                        <option value="">發票號碼</option>
-                                        <option value="">發票號碼</option>
-                                        <option value="">發票號碼</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <select name="" id="">
-                                        <option value="">續約提醒</option>
-                                        <option value="">續約提醒</option>
-                                        <option value="">續約提醒</option>
-                                        <option value="">續約提醒</option>
-                                    </select>
-                                </td>
+                                </td> -->
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">群組業務</th>
 
+                                <!-- <td>
+                                    <select name="" id="">
+                                        <option value="">點位</option>
+                                        <option value="">點位</option>
+                                        <option value="">點位</option>
+                                        <option value="">點位</option>
+                                    </select>
+                                </td> -->
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">點位</th>
+
+                                <!-- <td>
+                                    <select name="" id="">
+                                        <option value="">版面</option>
+                                        <option value="">版面</option>
+                                        <option value="">版面</option>
+                                        <option value="">版面</option>
+                                    </select>
+                                </td> -->
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">版面</th>
+
+                                <!-- <td>
+                                    <select name="" id="">
+                                        <option value="">起租日</option>
+                                        <option value="">起租日</option>
+                                        <option value="">起租日</option>
+                                        <option value="">起租日</option>
+                                    </select>
+                                </td> -->
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">起租日</th>
+
+                                <!-- <td>
+                                    <select name="" id="">
+                                        <option value="">到期日</option>
+                                        <option value="">到期日</option>
+                                        <option value="">到期日</option>
+                                        <option value="">到期日</option>
+                                    </select>
+                                </td> -->
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">到期日</th>
+
+                                <!-- <td>
+                                    <select name="" id="">
+                                        <option value="">狀態</option>
+                                        <option value="">狀態</option>
+                                        <option value="">狀態</option>
+                                        <option value="">狀態</option>
+                                    </select>
+                                </td> -->
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">狀態</th>
+
+                                <!-- <td>
+                                    <select name="" id="">
+                                        <option value="">成本</option>
+                                        <option value="">成本</option>
+                                        <option value="">成本</option>
+                                        <option value="">成本</option>
+                                    </select>
+                                </td> -->
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">成本</th>
+
+                                <!-- <td>
+                                    <select name="" id="">
+                                        <option value="">股紅金額</option>
+                                        <option value="">股紅金額</option>
+                                        <option value="">股紅金額</option>
+                                        <option value="">股紅金額</option>
+                                    </select>
+                                </td> -->
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">股紅金額</th>
+
+                                <!-- <td>
+                                    <select name="" id="">
+                                        <option value="">股紅</option>
+                                        <option value="">股紅</option>
+                                        <option value="">股紅</option>
+                                        <option value="">股紅</option>
+                                    </select>
+                                </td> -->
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">股紅</th>
+
+                                <!-- <td>
+                                    <select name="" id="">
+                                        <option value="">付款方式</option>
+                                        <option value="">付款方式</option>
+                                        <option value="">付款方式</option>
+                                        <option value="">付款方式</option>
+                                    </select>
+                                </td> -->
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">付款方式</th>
+
+                                <!-- <td>
+                                    <select name="" id="">
+                                        <option value="">支票號碼</option>
+                                        <option value="">支票號碼</option>
+                                        <option value="">支票號碼</option>
+                                        <option value="">支票號碼</option>
+                                    </select>
+                                </td> -->
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">支票號碼</th>
+
+                                <!-- <td>
+                                    <select name="" id="">
+                                        <option value="">承租方</option>
+                                        <option value="">承租方</option>
+                                        <option value="">承租方</option>
+                                        <option value="">承租方</option>
+                                    </select>
+                                </td> -->
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">承租方</th>
+
+                                <!-- <td>
+                                    <select name="" id="">
+                                        <option value="">稅金</option>
+                                        <option value="">稅金</option>
+                                        <option value="">稅金</option>
+                                        <option value="">稅金</option>
+                                    </select>
+                                </td> -->
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">稅金</th>
+
+                                <!-- <td>
+                                    <select name="" id="">
+                                        <option value="">稅後毛利</option>
+                                        <option value="">稅後毛利</option>
+                                        <option value="">稅後毛利</option>
+                                        <option value="">稅後毛利</option>
+                                    </select>
+                                </td> -->
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">稅後毛利</th>
+
+                                <!-- <td>
+                                    <select name="" id="">
+                                        <option value="">收款日期</option>
+                                        <option value="">收款日期</option>
+                                        <option value="">收款日期</option>
+                                        <option value="">收款日期</option>
+                                    </select>
+                                </td> -->
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">收款日期</th>
+
+                                <!-- <td>
+                                    <select name="" id="">
+                                        <option value="">確認收款</option>
+                                        <option value="">確認收款</option>
+                                        <option value="">確認收款</option>
+                                        <option value="">確認收款</option>
+                                    </select>
+                                </td> -->
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">確認收款</th>
+
+                                <!-- <td>
+                                    <select name="" id="">
+                                        <option value="">合約備註</option>
+                                        <option value="">合約備註</option>
+                                        <option value="">合約備註</option>
+                                        <option value="">合約備註</option>
+                                    </select>
+                                </td> -->
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">合約備註</th>
+
+                                <!-- <td>
+                                    <select name="" id="">
+                                        <option value="">入帳日期</option>
+                                        <option value="">入帳日期</option>
+                                        <option value="">入帳日期</option>
+                                        <option value="">入帳日期</option>
+                                    </select>
+                                </td> -->
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">入帳日期</th>
+
+                                <!-- <td>
+                                    <select name="" id="">
+                                        <option value="">待開立發票日期</option>
+                                        <option value="">待開立發票日期</option>
+                                        <option value="">待開立發票日期</option>
+                                        <option value="">待開立發票日期</option>
+                                    </select>
+                                </td> -->
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">待開立發票日期</th>
+
+                                <!-- <td>
+                                    <select name="" id="">
+                                        <option value="">發票號碼</option>
+                                        <option value="">發票號碼</option>
+                                        <option value="">發票號碼</option>
+                                        <option value="">發票號碼</option>
+                                    </select>
+                                </td> -->
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">發票號碼</th>
+
+                                <!-- <td>
+                                    <select name="" id="">
+                                        <option value="">續約提醒</option>
+                                        <option value="">續約提醒</option>
+                                        <option value="">續約提醒</option>
+                                        <option value="">續約提醒</option>
+                                    </select>
+                                </td> -->
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">續約提醒</th>
                             </tr>
+                        </thead>
+                        <tbody>
                             <tr>
                                 <td class="text-center"><div class="form-group">
                                     <input type="checkbox" id="html6">
@@ -667,7 +733,7 @@
                                 <td>2023/06/01</td>
                                 <td>2023/05/10</td>
                                 <td>CK12345678</td>
-                                <td></td>
+                                <!-- <td></td> -->
                             </tr>
                         </tbody>
                     </table>
@@ -676,6 +742,20 @@
         </div>
     </section>
     <!-- contract body section end here -->
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+    <script>$('#tableContractOne').DataTable();</script>
+    <script>$('#tableContractTwo').DataTable();</script>
 
 </body>
 

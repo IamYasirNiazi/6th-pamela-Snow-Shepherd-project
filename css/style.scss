@@ -12,9 +12,15 @@ body {
     white-space: nowrap !important;
 }
 
-.dataTables_length, .dataTables_filter, .dataTables_info, .dataTables_paginate, .paging_simple_numbers{
+.dataTables_length, .dataTables_filter, 
+.dataTables_info, .dataTables_paginate, .paging_simple_numbers{
     display: none !important;
 }
+
+table.dataTable{
+    margin-top: 0 !important;
+}
+
 
 h1,
 h2,
@@ -189,9 +195,17 @@ label {
     white-space: nowrap;
 }
 
-td, th{
+td{
     background-color: #fff;
     font-size: 12px;
+    padding: 4px 15px;
+}
+
+th{
+    background-color: #fff;
+    font-size: 12px;
+    padding: 4px 15px;
+    border: 1px solid #222;
 }
 
 .common_btn {
@@ -215,7 +229,8 @@ td, th{
 
 .table_box div {
     width: 110%;
-    height: 110%;
+    // height: 110%;
+    // height: 500px;
 }
 
 table tr td {
@@ -375,6 +390,7 @@ button {
     height: 100vh;
     display: flex;
     align-items: center;
+    background-color: #fff;
     
     .case_container {
         max-width: 500px;
@@ -674,6 +690,7 @@ button {
     height: 100vh;
     display: flex;
     align-items: center;
+    background-color: #fff;
     
     .contract_container {
         max-width: 500px;
@@ -1087,7 +1104,7 @@ button {
     
     .table_box div {
         width: 1300px;
-        height: 500px;
+        // height: 500px;
     }
     
     table tr td {
