@@ -168,15 +168,6 @@ select {
   padding: 2.5px 10px;
 }
 
-input::-moz-placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 20px;
-  color: #000000;
-  opacity: 0.88;
-  white-space: nowrap;
-}
-
 input::placeholder,
 select,
 p,
@@ -387,15 +378,6 @@ button {
 .case #exceptional input {
   height: 62px;
 }
-.case input::-moz-placeholder {
-  font-weight: 400;
-  font-size: 12px !important;
-  /* line-height: 21px; */
-  color: #000000;
-  opacity: 0.88;
-  white-space: wrap;
-  object-fit: contain;
-}
 .case input::placeholder {
   font-weight: 400;
   font-size: 12px !important;
@@ -403,8 +385,7 @@ button {
   color: #000000;
   opacity: 0.88;
   white-space: wrap;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .case .case_container main form a {
   font-weight: 400;
@@ -867,12 +848,6 @@ button {
   border: 1px solid #000000;
   padding: 2.5px 10px;
 }
-.point_container input::-moz-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #000000;
-}
 .point_container input::placeholder {
   font-weight: 400;
   font-size: 14px;
@@ -914,9 +889,6 @@ button {
   width: 46px;
   padding: 2.5px 0;
 }
-.point_container input::-moz-placeholder.number {
-  text-align: center !important;
-}
 .point_container input::placeholder.number {
   text-align: center !important;
 }
@@ -952,4 +924,4 @@ button {
 .point_container table span {
   border: 1px solid black;
   background: #FFFFFF;
-}/*# sourceMappingURL=style.css.map */
+}
