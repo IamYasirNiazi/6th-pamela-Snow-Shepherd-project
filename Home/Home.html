@@ -13,6 +13,7 @@
         <!-- <link rel="stylesheet" href="../style.css"> -->
         <!-- <link rel="stylesheet" href="./Home.css"> -->
         <link rel="stylesheet" href="../css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
     
@@ -256,7 +257,23 @@
                                                                     <option value="">租權</option>
                                                                 </select>
                                                             </td> -->
-                                                            <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">租權</th>
+
+                                                            <th class="sorting sorting_asc search" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">租權 &nbsp;<i class="ri-search-line" onclick="openFilterOne(event)"></i>
+                                                                <form class="form" id="form-one">
+                                                                    <h6>Text Filter</h6>
+                                                                <div class="main">
+                                                                    <div class="input">
+                                                                        <input type="text" placeholder="Search">
+                                                                        <i class="ri-search-line"></i>
+                                                                    </div>
+                                                                    <div class="btns">
+                                                                        <button class="ok-btn">Ok</button>
+                                                                        <button class="cancel-btn" onclick="closeFilterOne(event)">Cancel</button>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                </form>
+                                                            </th>
 
                                                             <!-- <td>
                                                                 <select name="" id="">
@@ -266,7 +283,22 @@
                                                                     <option value="">點位</option>
                                                                 </select>
                                                             </td> -->
-                                                            <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">點位</th>
+                                                            <th class="sorting sorting_asc search" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">點位 &nbsp;<i class="ri-search-line" onclick="openFilterTwo(event)"></i>
+                                                                <form class="form" id="form-two">
+                                                                    <h6>Text Filter</h6>
+                                                                <div class="main">
+                                                                    <div class="input">
+                                                                        <input type="text" placeholder="Search">
+                                                                        <i class="ri-search-line"></i>
+                                                                    </div>
+                                                                    <div class="btns">
+                                                                        <button class="ok-btn">Ok</button>
+                                                                        <button class="cancel-btn" onclick="closeFilterTwo(event)">Cancel</button>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                </form>
+                                                            </th>
 
                                                             <!-- <td>
                                                                 <select name="" id="">
@@ -276,7 +308,22 @@
                                                                     <option value="">地址</option>
                                                                 </select>
                                                             </td> -->
-                                                            <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">地址</th>
+                                                            <th class="sorting sorting_asc search" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">地址 &nbsp;<i class="ri-search-line" onclick="openFilterThree(event)"></i>
+                                                                <form class="form" id="form-three">
+                                                                    <h6>Text Filter</h6>
+                                                                <div class="main">
+                                                                    <div class="input">
+                                                                        <input type="text" placeholder="Search">
+                                                                        <i class="ri-search-line"></i>
+                                                                    </div>
+                                                                    <div class="btns">
+                                                                        <button class="ok-btn">Ok</button>
+                                                                        <button class="cancel-btn" onclick="closeFilterThree(event)">Cancel</button>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                </form>
+                                                            </th>
 
                                                             <!-- <td>
                                                                 <select name="" id="">
@@ -286,7 +333,22 @@
                                                                     <option value="">點位狀態</option>
                                                                 </select>
                                                             </td> -->
-                                                            <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">點位狀態</th>
+                                                            <th class="sorting sorting_asc search" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">點位狀態 &nbsp;<i class="ri-search-line" onclick="openFilterFour(event)"></i>
+                                                                <form class="form" id="form-four">
+                                                                    <h6>Text Filter</h6>
+                                                                <div class="main">
+                                                                    <div class="input">
+                                                                        <input type="text" placeholder="Search">
+                                                                        <i class="ri-search-line"></i>
+                                                                    </div>
+                                                                    <div class="btns">
+                                                                        <button class="ok-btn">Ok</button>
+                                                                        <button class="cancel-btn" onclick="closeFilterFour(event)">Cancel</button>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                </form>
+                                                            </th>
 
                                                             <!-- <td>
                                                                 <select name="" id="">
@@ -296,7 +358,22 @@
                                                                     <option value="">版面</option>
                                                                 </select>
                                                             </td> -->
-                                                            <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">版面</th>
+                                                            <th class="sorting sorting_asc search" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">版面 &nbsp;<i class="ri-search-line" onclick="openFilterFive(event)"></i>
+                                                                <form class="form" id="form-five">
+                                                                    <h6>Text Filter</h6>
+                                                                <div class="main">
+                                                                    <div class="input">
+                                                                        <input type="text" placeholder="Search">
+                                                                        <i class="ri-search-line"></i>
+                                                                    </div>
+                                                                    <div class="btns">
+                                                                        <button class="ok-btn">Ok</button>
+                                                                        <button class="cancel-btn" onclick="closeFilterFive(event)">Cancel</button>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                </form>
+                                                            </th>
 
                                                             <!-- <td>
                                                                 <select name="" id="">
@@ -306,7 +383,22 @@
                                                                     <option value="">型態</option>
                                                                 </select>
                                                             </td> -->
-                                                            <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">型態</th>
+                                                            <th class="sorting sorting_asc search" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">型態 &nbsp;<i class="ri-search-line" onclick="openFilterSix(event)"></i>
+                                                                <form class="form" id="form-six">
+                                                                    <h6>Text Filter</h6>
+                                                                <div class="main">
+                                                                    <div class="input">
+                                                                        <input type="text" placeholder="Search">
+                                                                        <i class="ri-search-line"></i>
+                                                                    </div>
+                                                                    <div class="btns">
+                                                                        <button class="ok-btn">Ok</button>
+                                                                        <button class="cancel-btn" onclick="closeFilterSix(event)">Cancel</button>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                </form>
+                                                            </th>
 
                                                             <!-- <td>
                                                                 <select name="" id="">
@@ -316,7 +408,22 @@
                                                                     <option value="">成本</option>
                                                                 </select>
                                                             </td> -->
-                                                            <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">成本</th>
+                                                            <th class="sorting sorting_asc search" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">成本 &nbsp;<i class="ri-search-line" onclick="openFilterSeven(event)"></i>
+                                                                <form class="form" id="form-seven">
+                                                                    <h6>Text Filter</h6>
+                                                                <div class="main">
+                                                                    <div class="input">
+                                                                        <input type="text" placeholder="Search">
+                                                                        <i class="ri-search-line"></i>
+                                                                    </div>
+                                                                    <div class="btns">
+                                                                        <button class="ok-btn">Ok</button>
+                                                                        <button class="cancel-btn" onclick="closeFilterSeven(event)">Cancel</button>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                </form>
+                                                            </th>
 
                                                             <!-- <td>
                                                                 <select name="" id="">
@@ -326,7 +433,22 @@
                                                                     <option value="">目標位置</option>
                                                                 </select>
                                                             </td> -->
-                                                            <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">目標位置</th>
+                                                            <th class="sorting sorting_asc search" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">目標位置 &nbsp;<i class="ri-search-line" onclick="openFilterEight(event)"></i>
+                                                                <form class="form" id="form-eight">
+                                                                    <h6>Text Filter</h6>
+                                                                <div class="main">
+                                                                    <div class="input">
+                                                                        <input type="text" placeholder="Search">
+                                                                        <i class="ri-search-line"></i>
+                                                                    </div>
+                                                                    <div class="btns">
+                                                                        <button class="ok-btn">Ok</button>
+                                                                        <button class="cancel-btn" onclick="closeFilterEight(event)">Cancel</button>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                </form>
+                                                            </th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -365,5 +487,154 @@
     <script>$('#tableHomeTwo').DataTable();</script>
     <script>$('#tableHomeThree').DataTable();</script>
     <script>$('#tableHomeFour').DataTable();</script>
+
+
+    <!-- <script>
+        const searchFilter = ()=>{
+            $("#searchModal").modal("show")
+            $('.modal-backdrop').remove();
+        }
+    </script>
+
+    <script>
+        function closeModals(event){
+        event.preventDefault()
+        $("#searchModal").modal("hide")
+        }
+    </script> -->
+
+
+    <script>
+        function openFilterOne(event){
+            event.preventDefault()
+            const showForm = document.getElementById("form-one")
+            showForm.classList.toggle("search-filter")
+        }
+
+        function closeFilterOne(event){
+            event.preventDefault()
+            const hideForm = document.getElementById("form-one")
+            hideForm.classList.remove("search-filter")
+        }
+
+        function openFilterTwo(event){
+            event.preventDefault()
+            const showForm = document.getElementById("form-two")
+            showForm.classList.toggle("search-filter")
+        }
+
+        function closeFilterTwo(event){
+            event.preventDefault()
+            const hideForm = document.getElementById("form-two")
+            hideForm.classList.remove("search-filter")
+        }
+
+        function openFilterThree(event){
+            event.preventDefault()
+            const showForm = document.getElementById("form-three")
+            showForm.classList.toggle("search-filter")
+        }
+
+        function closeFilterThree(event){
+            event.preventDefault()
+            const hideForm = document.getElementById("form-three")
+            hideForm.classList.remove("search-filter")
+        }
+
+        function openFilterFour(event){
+            event.preventDefault()
+            const showForm = document.getElementById("form-four")
+            showForm.classList.toggle("search-filter")
+        }
+
+        function closeFilterFour(event){
+            event.preventDefault()
+            const hideForm = document.getElementById("form-four")
+            hideForm.classList.remove("search-filter")
+        }
+
+        function openFilterFive(event){
+            event.preventDefault()
+            const showForm = document.getElementById("form-five")
+            showForm.classList.toggle("search-filter")
+        }
+
+        function closeFilterFive(event){
+            event.preventDefault()
+            const hideForm = document.getElementById("form-five")
+            hideForm.classList.remove("search-filter")
+        }
+
+        function openFilterSix(event){
+            event.preventDefault()
+            const showForm = document.getElementById("form-six")
+            showForm.classList.toggle("search-filter")
+        }
+
+        function closeFilterSix(event){
+            event.preventDefault()
+            const hideForm = document.getElementById("form-six")
+            hideForm.classList.remove("search-filter")
+        }
+
+        function openFilterSeven(event){
+            event.preventDefault()
+            const showForm = document.getElementById("form-seven")
+            showForm.classList.toggle("search-filter")
+        }
+
+        function closeFilterSeven(event){
+            event.preventDefault()
+            const hideForm = document.getElementById("form-seven")
+            hideForm.classList.remove("search-filter")
+        }
+
+        function openFilterEight(event){
+            event.preventDefault()
+            const showForm = document.getElementById("form-eight")
+            showForm.classList.toggle("search-filter")
+        }
+
+        function closeFilterEight(event){
+            event.preventDefault()
+            const hideForm = document.getElementById("form-eight")
+            hideForm.classList.remove("search-filter")
+        }
+
+    </script>
+
+
+    <!-- Search Modal -->
+    <!-- <div
+    class="modal fade"
+    id="searchModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal modal-sm h-auto modal-dialog-centered">
+    <div class="modal-content">
+        <div class="sixth-modal-body">
+        <div class="modal-edit-wrapper">
+
+            <form class="form">
+                <h6>Text Filter</h6>
+            <div class="main">
+                <div class="input">
+                    <input type="text" placeholder="Search">
+                    <i class="ri-search-line"></i>
+                </div>
+                <div class="btns">
+                    <button class="ok-btn">Ok</button>
+                    <button class="cancel-btn" onclick="closeModals(event)">Cancel</button>
+                </div>
+            </div>
+            
+            </form>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div> -->
+
 </body>
 </html>

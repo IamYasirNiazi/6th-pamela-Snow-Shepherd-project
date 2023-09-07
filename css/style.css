@@ -11,6 +11,10 @@ body {
   white-space: nowrap !important;
 }
 
+.search-filter {
+  display: flex !important;
+}
+
 .dataTables_length, .dataTables_filter,
 .dataTables_info, .dataTables_paginate, .paging_simple_numbers {
   display: none !important;
@@ -607,7 +611,7 @@ button {
   background-color: #fff;
 }
 .login .admin_panel_container {
-  max-width: 500px;
+  max-width: 600px;
   margin: auto;
 }
 .login .admin_panel_container header {
@@ -629,7 +633,7 @@ button {
 }
 .login .admin_panel_container main {
   background: #F0F0F0;
-  padding: 56px 0 69px;
+  padding: 60px 0 69px;
 }
 .login .admin_panel_container main form {
   max-width: 240px;
@@ -679,6 +683,64 @@ button {
 }
 .home__body table {
   width: 100%;
+}
+.home__body table th.search {
+  position: relative;
+}
+.home__body table th.search form {
+  display: none;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #222;
+  border-radius: 0.3rem;
+  width: 20rem;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 1rem;
+}
+.home__body table th.search form h6 {
+  border-bottom: 1px solid #222;
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+.home__body table th.search form .main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.7rem;
+}
+.home__body table th.search form .main .input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid #222 !important;
+  border-radius: 0.2rem;
+  width: 100%;
+  padding: 0.2rem;
+}
+.home__body table th.search form .main .input input {
+  background: none;
+  outline: none !important;
+  border: none !important;
+  font-size: 0.95rem !important;
+}
+.home__body table th.search form .main .input input::placeholder {
+  font-size: 0.95rem !important;
+}
+.home__body table th.search form .main .input i {
+  position: absolute;
+  right: 0.1rem;
+  top: 49%;
+  transform: translate(-50%, -50%);
+}
+.home__body table th.search form .main .btns .ok-btn {
+  padding: 0.1rem 1.5rem !important;
+  font-size: 0.95rem !important;
+}
+.home__body table th.search form .main .btns .cancel-btn {
+  padding: 0.1rem 1.5rem !important;
+  font-size: 0.95rem !important;
 }
 .home__body table, .home__body th, .home__body td {
   border: 1px solid black;
@@ -769,7 +831,7 @@ button {
   align-items: center;
 }
 .menu .menu_container {
-  max-width: 500px;
+  max-width: 600px;
   margin: auto;
 }
 .menu .menu_container header {
@@ -788,8 +850,9 @@ button {
 }
 .menu .menu_container main {
   background: #F0F0F0;
-  padding: 47px 30px 55px;
+  padding: 55px 30px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 13px;
 }
