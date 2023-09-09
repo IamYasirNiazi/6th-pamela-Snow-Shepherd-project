@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page (Pg03)</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0-alpha3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+        <!-- <link rel="stylesheet" href="../style.css"> -->
+        <!-- <link rel="stylesheet" href="./Home.css"> -->
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- topbar section start here -->
+    <section class="topbar d-flex justify-content-between align-items-center">
+        <div class="topbar__inner d-flex align-items-center">
+            <img src="../assets/briefcase.png" alt="icon">
+            <p>人員管理</p>
+        </div>
+        <span>
+            <img src="../assets/close.png" alt="icon">
+        </span>
+    </section>
+    <!-- topbar section end here -->
+
+    <!-- home body section start here -->
+    <div class="people-management">
+            <div class="hmBody__inner">
+                <div class="row row1">
+                    <div class="col col-12 col-md-12 px-3">
+                        <div class="top-wrapper d-flex flex-column gap-2">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="left d-flex align-items-center gap-2">
+                                    <div>
+                                        <label for="員工編號">員工編號</label>
+                                        <input type="text" id="員工編號" placeholder="自動帶入">
+                                    </div>
+
+                                    <div>
+                                        <label for="姓名">姓名</label>
+                                        <input type="text" id="姓名" placeholder="手打輸入">
+                                    </div>
+                                </div>
+
+                                <div class="right d-flex align-items-center gap-2">
+                                    <div>
+                                        <label for="職務權限">職務權限</label>
+                                        <select name="" id="">
+                                            <option value="">銷售_業務主管</option>
+                                            <option value="">銷售_業務主管</option>
+                                            <option value="">銷售_業務主管</option>
+                                        </select>
+                                    </div>
+
+                                    <div>
+                                        <label for="公司">公司</label>
+                                        <select name="" id="">
+                                            <option value="">迦勒廣告事業有限公司</option>
+                                            <option value="">迦勒廣告事業有限公司</option>
+                                            <option value="">迦勒廣告事業有限公司</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="left d-flex align-items-center gap-2">
+                                    <div>
+                                        <label for="聯絡手機">聯絡手機</label>
+                                        <input type="text" id="聯絡手機" placeholder="0912-012-333">
+                                    </div>
+
+                                    <div>
+                                        <label for="帳號">帳號</label>
+                                        <input type="text" id="帳號" placeholder="手打輸入">
+                                    </div>
+                                </div>
+
+                                <div class="right d-flex align-items-center gap-2">
+                                    <div>
+                                        <label for="密碼">密碼</label>
+                                        <input type="text" id="密碼" placeholder="手打輸入">
+                                    </div>
+
+                                    <!-- <div>
+                                        <label for="公司">公司</label>
+                                        <select name="" id="">
+                                            <option value="">迦勒廣告事業有限公司</option>
+                                            <option value="">迦勒廣告事業有限公司</option>
+                                            <option value="">迦勒廣告事業有限公司</option>
+                                        </select>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="left d-flex align-items-center gap-2">
+                                    <div>
+                                        <label for="到職日">到職日</label>
+                                        <input type="date" id="到職日">
+                                    </div>
+
+                                    <div>
+                                        <label for="離職日">離職日</label>
+                                        <input type="date" id="離職日" placeholder="手打輸入">
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" name="" id="離職">
+                                        <label for="離職">離職</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center gap-2 justify-content-end">
+                                <button>新增</button>
+                                <button>儲存</button>
+                                <button>刪除</button>
+                                <button>清除</button>
+                            </div>
+                                                   
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row2">
+                    <div class="col col-md-12">
+                        <div class="wrapper">
+                            <div class="box">
+                                <div class="blank__box bottom__box">
+                                    <div class="box__inner">
+                                        <table id="tableHomeFour" style="width: 60%;">
+                                            <thead>
+                                                <tr>
+                                                    <!-- <td>
+                                                        <select name="" id="">
+                                                            <option value="">租權</option>
+                                                            <option value="">租權</option>
+                                                            <option value="">租權</option>
+                                                            <option value="">租權</option>
+                                                        </select>
+                                                    </td> -->
+
+                                                    <th class="sorting sorting_asc search" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">員工編號 &nbsp;<i class="ri-search-line" onclick="openFilterOne(event)"></i>
+                                                        <form class="form" id="form-one">
+                                                            <h6>Text Filter</h6>
+                                                        <div class="main">
+                                                            <div class="input">
+                                                                <input type="text" placeholder="Search">
+                                                                <i class="ri-search-line"></i>
+                                                            </div>
+                                                            <div class="btns">
+                                                                <button class="ok-btn">Ok</button>
+                                                                <button class="cancel-btn" onclick="closeFilterOne(event)">Cancel</button>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        </form>
+                                                    </th>
+
+                                                    <!-- <td>
+                                                        <select name="" id="">
+                                                            <option value="">點位</option>
+                                                            <option value="">點位</option>
+                                                            <option value="">點位</option>
+                                                            <option value="">點位</option>
+                                                        </select>
+                                                    </td> -->
+                                                    <th class="sorting sorting_asc search" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">姓名 &nbsp;<i class="ri-search-line" onclick="openFilterTwo(event)"></i>
+                                                        <form class="form" id="form-two">
+                                                            <h6>Text Filter</h6>
+                                                        <div class="main">
+                                                            <div class="input">
+                                                                <input type="text" placeholder="Search">
+                                                                <i class="ri-search-line"></i>
+                                                            </div>
+                                                            <div class="btns">
+                                                                <button class="ok-btn">Ok</button>
+                                                                <button class="cancel-btn" onclick="closeFilterTwo(event)">Cancel</button>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        </form>
+                                                    </th>
+
+                                                    <!-- <td>
+                                                        <select name="" id="">
+                                                            <option value="">地址</option>
+                                                            <option value="">地址</option>
+                                                            <option value="">地址</option>
+                                                            <option value="">地址</option>
+                                                        </select>
+                                                    </td> -->
+                                                    <th class="sorting sorting_asc search" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">職務權限 &nbsp;<i class="ri-search-line" onclick="openFilterThree(event)"></i>
+                                                        <form class="form" id="form-three">
+                                                            <h6>Text Filter</h6>
+                                                        <div class="main">
+                                                            <div class="input">
+                                                                <input type="text" placeholder="Search">
+                                                                <i class="ri-search-line"></i>
+                                                            </div>
+                                                            <div class="btns">
+                                                                <button class="ok-btn">Ok</button>
+                                                                <button class="cancel-btn" onclick="closeFilterThree(event)">Cancel</button>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        </form>
+                                                    </th>
+
+                                                    <!-- <td>
+                                                        <select name="" id="">
+                                                            <option value="">點位狀態</option>
+                                                            <option value="">點位狀態</option>
+                                                            <option value="">點位狀態</option>
+                                                            <option value="">點位狀態</option>
+                                                        </select>
+                                                    </td> -->
+                                                    <th class="sorting sorting_asc search" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">公司 &nbsp;<i class="ri-search-line" onclick="openFilterFour(event)"></i>
+                                                        <form class="form" id="form-four">
+                                                            <h6>Text Filter</h6>
+                                                        <div class="main">
+                                                            <div class="input">
+                                                                <input type="text" placeholder="Search">
+                                                                <i class="ri-search-line"></i>
+                                                            </div>
+                                                            <div class="btns">
+                                                                <button class="ok-btn">Ok</button>
+                                                                <button class="cancel-btn" onclick="closeFilterFour(event)">Cancel</button>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        </form>
+                                                    </th>
+
+                                                    <!-- <td>
+                                                        <select name="" id="">
+                                                            <option value="">版面</option>
+                                                            <option value="">版面</option>
+                                                            <option value="">版面</option>
+                                                            <option value="">版面</option>
+                                                        </select>
+                                                    </td> -->
+                                                    <th class="sorting sorting_asc search" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">聯絡手機 &nbsp;<i class="ri-search-line" onclick="openFilterFive(event)"></i>
+                                                        <form class="form" id="form-five">
+                                                            <h6>Text Filter</h6>
+                                                        <div class="main">
+                                                            <div class="input">
+                                                                <input type="text" placeholder="Search">
+                                                                <i class="ri-search-line"></i>
+                                                            </div>
+                                                            <div class="btns">
+                                                                <button class="ok-btn">Ok</button>
+                                                                <button class="cancel-btn" onclick="closeFilterFive(event)">Cancel</button>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        </form>
+                                                    </th>
+
+                                                    <!-- <td>
+                                                        <select name="" id="">
+                                                            <option value="">型態</option>
+                                                            <option value="">型態</option>
+                                                            <option value="">型態</option>
+                                                            <option value="">型態</option>
+                                                        </select>
+                                                    </td> -->
+                                                    <th class="sorting sorting_asc search" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">帳號 &nbsp;<i class="ri-search-line" onclick="openFilterSix(event)"></i>
+                                                        <form class="form" id="form-six">
+                                                            <h6>Text Filter</h6>
+                                                        <div class="main">
+                                                            <div class="input">
+                                                                <input type="text" placeholder="Search">
+                                                                <i class="ri-search-line"></i>
+                                                            </div>
+                                                            <div class="btns">
+                                                                <button class="ok-btn">Ok</button>
+                                                                <button class="cancel-btn" onclick="closeFilterSix(event)">Cancel</button>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        </form>
+                                                    </th>
+
+                                                    <!-- <td>
+                                                        <select name="" id="">
+                                                            <option value="">成本</option>
+                                                            <option value="">成本</option>
+                                                            <option value="">成本</option>
+                                                            <option value="">成本</option>
+                                                        </select>
+                                                    </td> -->
+                                                    <th class="sorting sorting_asc search" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">密碼 &nbsp;<i class="ri-search-line" onclick="openFilterSeven(event)"></i>
+                                                        <form class="form" id="form-seven">
+                                                            <h6>Text Filter</h6>
+                                                        <div class="main">
+                                                            <div class="input">
+                                                                <input type="text" placeholder="Search">
+                                                                <i class="ri-search-line"></i>
+                                                            </div>
+                                                            <div class="btns">
+                                                                <button class="ok-btn">Ok</button>
+                                                                <button class="cancel-btn" onclick="closeFilterSeven(event)">Cancel</button>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        </form>
+                                                    </th>
+
+                                                    <!-- <td>
+                                                        <select name="" id="">
+                                                            <option value="">目標位置</option>
+                                                            <option value="">目標位置</option>
+                                                            <option value="">目標位置</option>
+                                                            <option value="">目標位置</option>
+                                                        </select>
+                                                    </td> -->
+                                                    <th class="sorting sorting_asc search" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">離職 &nbsp;<i class="ri-search-line" onclick="openFilterEight(event)"></i>
+                                                        <form class="form" id="form-eight">
+                                                            <h6>Text Filter</h6>
+                                                        <div class="main">
+                                                            <div class="input">
+                                                                <input type="text" placeholder="Search">
+                                                                <i class="ri-search-line"></i>
+                                                            </div>
+                                                            <div class="btns">
+                                                                <button class="ok-btn">Ok</button>
+                                                                <button class="cancel-btn" onclick="closeFilterEight(event)">Cancel</button>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        </form>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>0071</td>
+                                                    <td>張李王小明</td>
+                                                    <td>銷售_業務主管</td>
+                                                    <td>迦勒廣告事業有限公司</td>
+                                                    <td>0912-012-123</td>
+                                                    <td>noname@gmail.com</td>
+                                                    <td>1234567890</td>
+                                                    <td><input type="checkbox" name="" id=""></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- home body section end here -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+    <script>$('#tableHomeOne').DataTable();</script>
+    <script>$('#tableHomeTwo').DataTable();</script>
+    <script>$('#tableHomeThree').DataTable();</script>
+    <script>$('#tableHomeFour').DataTable();</script>
+
+
+    <!-- <script>
+        const searchFilter = ()=>{
+            $("#searchModal").modal("show")
+            $('.modal-backdrop').remove();
+        }
+    </script>
+
+    <script>
+        function closeModals(event){
+        event.preventDefault()
+        $("#searchModal").modal("hide")
+        }
+    </script> -->
+
+
+    <script>
+        function openFilterOne(event){
+            event.preventDefault()
+            const showForm = document.getElementById("form-one")
+            showForm.classList.toggle("search-filter")
+        }
+
+        function closeFilterOne(event){
+            event.preventDefault()
+            const hideForm = document.getElementById("form-one")
+            hideForm.classList.remove("search-filter")
+        }
+
+        function openFilterTwo(event){
+            event.preventDefault()
+            const showForm = document.getElementById("form-two")
+            showForm.classList.toggle("search-filter")
+        }
+
+        function closeFilterTwo(event){
+            event.preventDefault()
+            const hideForm = document.getElementById("form-two")
+            hideForm.classList.remove("search-filter")
+        }
+
+        function openFilterThree(event){
+            event.preventDefault()
+            const showForm = document.getElementById("form-three")
+            showForm.classList.toggle("search-filter")
+        }
+
+        function closeFilterThree(event){
+            event.preventDefault()
+            const hideForm = document.getElementById("form-three")
+            hideForm.classList.remove("search-filter")
+        }
+
+        function openFilterFour(event){
+            event.preventDefault()
+            const showForm = document.getElementById("form-four")
+            showForm.classList.toggle("search-filter")
+        }
+
+        function closeFilterFour(event){
+            event.preventDefault()
+            const hideForm = document.getElementById("form-four")
+            hideForm.classList.remove("search-filter")
+        }
+
+        function openFilterFive(event){
+            event.preventDefault()
+            const showForm = document.getElementById("form-five")
+            showForm.classList.toggle("search-filter")
+        }
+
+        function closeFilterFive(event){
+            event.preventDefault()
+            const hideForm = document.getElementById("form-five")
+            hideForm.classList.remove("search-filter")
+        }
+
+        function openFilterSix(event){
+            event.preventDefault()
+            const showForm = document.getElementById("form-six")
+            showForm.classList.toggle("search-filter")
+        }
+
+        function closeFilterSix(event){
+            event.preventDefault()
+            const hideForm = document.getElementById("form-six")
+            hideForm.classList.remove("search-filter")
+        }
+
+        function openFilterSeven(event){
+            event.preventDefault()
+            const showForm = document.getElementById("form-seven")
+            showForm.classList.toggle("search-filter")
+        }
+
+        function closeFilterSeven(event){
+            event.preventDefault()
+            const hideForm = document.getElementById("form-seven")
+            hideForm.classList.remove("search-filter")
+        }
+
+        function openFilterEight(event){
+            event.preventDefault()
+            const showForm = document.getElementById("form-eight")
+            showForm.classList.toggle("search-filter")
+        }
+
+        function closeFilterEight(event){
+            event.preventDefault()
+            const hideForm = document.getElementById("form-eight")
+            hideForm.classList.remove("search-filter")
+        }
+
+    </script>
+
+
+    <!-- Search Modal -->
+    <!-- <div
+    class="modal fade"
+    id="searchModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal modal-sm h-auto modal-dialog-centered">
+    <div class="modal-content">
+        <div class="sixth-modal-body">
+        <div class="modal-edit-wrapper">
+
+            <form class="form">
+                <h6>Text Filter</h6>
+            <div class="main">
+                <div class="input">
+                    <input type="text" placeholder="Search">
+                    <i class="ri-search-line"></i>
+                </div>
+                <div class="btns">
+                    <button class="ok-btn">Ok</button>
+                    <button class="cancel-btn" onclick="closeModals(event)">Cancel</button>
+                </div>
+            </div>
+            
+            </form>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div> -->
+
+</body>
+</html>

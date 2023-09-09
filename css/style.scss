@@ -1290,3 +1290,171 @@ button {
 
 
 
+// Authority Management
+.authority-management{
+
+
+}
+
+
+
+// People Management
+.people-management{
+
+    padding: 15px 21px;
+
+    .row1{
+
+        .col{
+
+            .top-wrapper{
+                width: 75%;
+                // border: 1px solid red;
+            }
+        }
+    }
+
+    .row2{
+        margin-top: 2rem;
+
+        table{
+            width: 100%;
+    
+            th.search{
+                position: relative;
+                
+                form{
+                    display: none;
+                    margin-top: 1rem;
+                    margin-left: .5rem;
+                    margin-bottom: .5rem;
+                    border: 1px solid #222;
+                    border-radius: .3rem;
+                    // width: 97%;
+                    width: 20rem;
+                    // position: absolute;
+                    // display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    padding: 1rem 1rem;
+    
+                    h6{
+                        border-bottom: 1px solid #222;
+                        padding-bottom: .5rem;
+                        font-size: .9rem;
+                    }
+    
+                    .main{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        gap: .7rem;
+                
+                .input{
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    border: 1px solid #222 !important;
+                    border-radius: .2rem;
+                    width: 100%;
+                    padding: .2rem;
+            
+                    input{
+                        background: none;
+                        outline: none !important;
+                        border: none !important;
+                        font-size: .95rem !important;
+    
+                        &::placeholder{
+                            font-size: .95rem !important;
+                        }
+                    }
+            
+                    i{
+                        position: absolute;
+                        right: .1rem;
+                        top: 49%;
+                        transform: translate(-50%, -50%);
+                    }
+            
+                }
+            
+                .btns{
+    
+                    .ok-btn{
+                        padding: .1rem 1.5rem !important;
+                        font-size: .95rem !important;
+    
+            
+                    }
+            
+                    .cancel-btn{
+                        padding: .1rem 1.5rem !important;
+                        font-size: .95rem !important;
+                    }
+                }
+            }
+                }
+            }
+        }
+        
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
+        .hmBody__inner table td, th{
+            padding: 3px;
+        }
+        
+         table td select{
+            width: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+        }
+        
+        .box__top{
+            margin-bottom: 25px;
+        }
+        
+        .blank__box{
+            height: 522px;
+            width: 100%;
+            overflow: scroll;
+            border: 1px solid #000;
+            /* border-top: 0px; */
+        }
+        
+        .box__inner{
+            height: 1000px;
+            width: 800px;   
+            background-color: #DBDBDB;
+        }
+        
+        .box__bottom table td{
+            height: 25px;
+        }
+    
+        
+        .blank__box.bottom__box{
+            height: 681px;
+            width: 100%;
+        }
+        
+        .blank__box.bottom__box .box__inner{
+            width: 100%;
+        }
+
+    }
+    
+
+}
+
+
+
+.team-grouping{
+    
+}
+
+

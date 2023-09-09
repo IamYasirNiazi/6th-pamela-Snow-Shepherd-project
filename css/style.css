@@ -988,3 +988,112 @@ button {
   border: 1px solid black;
   background: #FFFFFF;
 }
+
+.people-management {
+  padding: 15px 21px;
+}
+.people-management .row1 .col .top-wrapper {
+  width: 75%;
+}
+.people-management .row2 {
+  margin-top: 2rem;
+}
+.people-management .row2 table {
+  width: 100%;
+}
+.people-management .row2 table th.search {
+  position: relative;
+}
+.people-management .row2 table th.search form {
+  display: none;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #222;
+  border-radius: 0.3rem;
+  width: 20rem;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 1rem;
+}
+.people-management .row2 table th.search form h6 {
+  border-bottom: 1px solid #222;
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+.people-management .row2 table th.search form .main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.7rem;
+}
+.people-management .row2 table th.search form .main .input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid #222 !important;
+  border-radius: 0.2rem;
+  width: 100%;
+  padding: 0.2rem;
+}
+.people-management .row2 table th.search form .main .input input {
+  background: none;
+  outline: none !important;
+  border: none !important;
+  font-size: 0.95rem !important;
+}
+.people-management .row2 table th.search form .main .input input::placeholder {
+  font-size: 0.95rem !important;
+}
+.people-management .row2 table th.search form .main .input i {
+  position: absolute;
+  right: 0.1rem;
+  top: 49%;
+  transform: translate(-50%, -50%);
+}
+.people-management .row2 table th.search form .main .btns .ok-btn {
+  padding: 0.1rem 1.5rem !important;
+  font-size: 0.95rem !important;
+}
+.people-management .row2 table th.search form .main .btns .cancel-btn {
+  padding: 0.1rem 1.5rem !important;
+  font-size: 0.95rem !important;
+}
+.people-management .row2 table, .people-management .row2 th, .people-management .row2 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.people-management .row2 .hmBody__inner table td, .people-management .row2 th {
+  padding: 3px;
+}
+.people-management .row2 table td select {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.people-management .row2 .box__top {
+  margin-bottom: 25px;
+}
+.people-management .row2 .blank__box {
+  height: 522px;
+  width: 100%;
+  overflow: scroll;
+  border: 1px solid #000;
+  /* border-top: 0px; */
+}
+.people-management .row2 .box__inner {
+  height: 1000px;
+  width: 800px;
+  background-color: #DBDBDB;
+}
+.people-management .row2 .box__bottom table td {
+  height: 25px;
+}
+.people-management .row2 .blank__box.bottom__box {
+  height: 681px;
+  width: 100%;
+}
+.people-management .row2 .blank__box.bottom__box .box__inner {
+  width: 100%;
+}
