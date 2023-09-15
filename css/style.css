@@ -9,6 +9,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   white-space: nowrap !important;
+  width: 100%;
 }
 
 .search-filter {
@@ -54,8 +55,9 @@ body {
 
 /* Chart */
 .topbar {
-  padding: 8px 6px;
+  padding: 8px 10px;
   background: #fff;
+  width: 100% !important;
 }
 
 .topbar__inner {
@@ -100,7 +102,8 @@ input:focus-visible {
 /* form css common */
 select,
 button,
-input {
+input,
+textarea {
   outline: none;
   border: 1px solid #000;
 }
@@ -166,13 +169,13 @@ button {
 
 /* form css common */
 input,
-select {
+select, textarea {
   background: #FFFFFF;
   border: 1px solid #000000;
   padding: 2.5px 10px;
 }
 
-input::placeholder,
+input::placeholder, textarea::placeholder,
 select,
 p,
 label {
@@ -989,11 +992,162 @@ button {
   background: #FFFFFF;
 }
 
+.authority-management {
+  width: 99% !important;
+}
+@media (max-width: 767px) {
+  .authority-management {
+    width: 96% !important;
+  }
+}
+.authority-management .main-wrapper {
+  width: 100% !important;
+}
+.authority-management .main-wrapper .row1 {
+  padding: 2rem;
+}
+.authority-management .main-wrapper .row1 select {
+  padding: 0.4rem 0.8rem;
+}
+@media (max-width: 767px) {
+  .authority-management .main-wrapper .row1 {
+    padding: 1rem;
+    padding-top: 2rem;
+  }
+}
+.authority-management .main-wrapper .row1 .col {
+  width: 100%;
+}
+.authority-management .main-wrapper .row1 .col .wrapper div button {
+  padding: 0.15rem 2rem;
+  background-color: #D9D9D9;
+}
+.authority-management .main-wrapper .row2 {
+  padding: 2rem;
+  padding-top: 1rem;
+}
+@media (max-width: 767px) {
+  .authority-management .main-wrapper .row2 {
+    padding: 0;
+    padding-top: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .authority-management .main-wrapper .row2 .col1 .wrapper {
+    padding: 1rem !important;
+  }
+}
+.authority-management .main-wrapper .row2 .col1 .wrapper .accordion {
+  border: 1px solid rgba(34, 34, 34, 0.6352941176);
+}
+.authority-management .main-wrapper .row2 .col1 .wrapper .accordion .accordion-item .accordion-button:not(.collapsed) {
+  background-color: #D9D9D9;
+}
+.authority-management .main-wrapper .row2 .col1 .wrapper .accordion .accordion-item .accordion-button {
+  background-color: transparent;
+}
+.authority-management .main-wrapper .row2 .col1 .wrapper .accordion .accordion-item:not(.accordion-collapsed) .accordion-button {
+  border: none;
+  box-shadow: none;
+}
+.authority-management .main-wrapper .row2 .col1 .wrapper .accordion .accordion-item {
+  background: transparent !important;
+  border: 1px solid rgba(167, 167, 167, 0.8980392157);
+}
+.authority-management .main-wrapper .row2 .col1 .wrapper .accordion .accordion-item .accordion-header .accordion-button {
+  background-color: #dddddd;
+  padding: 0.7rem 1rem !important;
+}
+.authority-management .main-wrapper .row2 .col1 .wrapper .accordion .accordion-item .accordion-collapse .accordion-body {
+  padding: 0;
+  border: none !important;
+  background-color: #fff;
+}
+.authority-management .main-wrapper .row2 .col1 .wrapper .accordion .accordion-item .accordion-collapse .accordion-body p {
+  border-top: 1px solid rgba(206, 206, 206, 0.9725490196) !important;
+  border-bottom: 1px solid rgba(206, 206, 206, 0.9725490196) !important;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+}
+.authority-management .main-wrapper .row2 .col1 .wrapper .accordion .accordion-item .accordion-collapse .accordion-body p a {
+  text-decoration: none;
+  color: inherit;
+}
+.authority-management .main-wrapper .row2 .col1 .wrapper .accordion .accordion-item .accordion-collapse .accordion-body p.active {
+  background-color: #D9E2FA;
+}
+@media (max-width: 767px) {
+  .authority-management .main-wrapper .row2 .col2 .wrapper {
+    padding: 1rem !important;
+  }
+}
+.authority-management .main-wrapper .row2 .col2 .wrapper table {
+  width: 100%;
+  max-width: 600px;
+}
+@media (max-width: 767px) {
+  .authority-management .main-wrapper .row2 .col2 .wrapper table {
+    width: 100%;
+    padding: 1rem !important;
+  }
+}
+.authority-management .main-wrapper .row2 .col2 .wrapper table tr th {
+  background-color: #d9e2fa;
+  padding: 10px 10px;
+}
+.authority-management .main-wrapper .row2 .col2 .wrapper table tr th label {
+  font-weight: 600;
+}
+.authority-management .main-wrapper .row2 .col2 .wrapper table tr td {
+  padding: 8px 10px;
+}
+
 .people-management {
   padding: 15px 21px;
+  width: 100% !important;
+}
+.people-management select {
+  padding: 0.4rem 0.8rem;
+}
+.people-management button {
+  padding: 0.15rem 2rem;
+  background-color: #D9D9D9;
+}
+.people-management .row1 {
+  margin-top: 1.5rem;
 }
 .people-management .row1 .col .top-wrapper {
-  width: 75%;
+  width: 80%;
+}
+.people-management .row1 .col .top-wrapper .btns {
+  justify-content: flex-end;
+}
+.people-management .row1 .col .top-wrapper label {
+  width: 3.5rem;
+}
+@media (max-width: 767px) {
+  .people-management .row1 .col .top-wrapper {
+    width: 100%;
+  }
+  .people-management .row1 .col .top-wrapper input, .people-management .row1 .col .top-wrapper select {
+    width: 100%;
+  }
+  .people-management .row1 .col .top-wrapper input[type=checkbox] {
+    width: fit-content;
+    margin-left: -1.5rem;
+  }
+  .people-management .row1 .col .top-wrapper label {
+    width: 3.5rem;
+  }
+  .people-management .row1 .col .top-wrapper .left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+  .people-management .row1 .col .top-wrapper .btns {
+    justify-content: flex-start;
+  }
 }
 .people-management .row2 {
   margin-top: 2rem;
@@ -1094,6 +1248,1387 @@ button {
   height: 681px;
   width: 100%;
 }
+@media (max-width: 767px) {
+  .people-management .row2 .blank__box.bottom__box {
+    height: 300px;
+  }
+}
 .people-management .row2 .blank__box.bottom__box .box__inner {
   width: 100%;
+}
+
+.team-grouping {
+  width: 99% !important;
+}
+@media (max-width: 767px) {
+  .team-grouping {
+    width: 92% !important;
+  }
+}
+.team-grouping .hmBody__inner {
+  width: 100% !important;
+}
+.team-grouping .hmBody__inner select {
+  padding: 0.4rem 0.8rem;
+}
+.team-grouping .hmBody__inner button {
+  padding: 0.15rem 2rem;
+  background-color: #D9D9D9;
+}
+.team-grouping .hmBody__inner .row1 .col {
+  padding: 2rem 0;
+  padding-left: 2rem;
+}
+@media (max-width: 767px) {
+  .team-grouping .hmBody__inner .row1 .col {
+    width: 100%;
+  }
+  .team-grouping .hmBody__inner .row1 .col input, .team-grouping .hmBody__inner .row1 .col select, .team-grouping .hmBody__inner .row1 .col textarea {
+    width: 99%;
+  }
+}
+.team-grouping .hmBody__inner .row1 .col .row1-line2 label {
+  width: 16% !important;
+}
+.team-grouping .hmBody__inner .row1 .col .row1-line1, .team-grouping .hmBody__inner .row1 .col .row1-line2, .team-grouping .hmBody__inner .row1 .col .row1-line3, .team-grouping .hmBody__inner .row1 .col .row1-line4, .team-grouping .hmBody__inner .row1 .col .row1-line5 {
+  width: 100%;
+}
+.team-grouping .hmBody__inner .row1 .col .row1-line1 input, .team-grouping .hmBody__inner .row1 .col .row1-line1 select, .team-grouping .hmBody__inner .row1 .col .row1-line1 textarea, .team-grouping .hmBody__inner .row1 .col .row1-line2 input, .team-grouping .hmBody__inner .row1 .col .row1-line2 select, .team-grouping .hmBody__inner .row1 .col .row1-line2 textarea, .team-grouping .hmBody__inner .row1 .col .row1-line3 input, .team-grouping .hmBody__inner .row1 .col .row1-line3 select, .team-grouping .hmBody__inner .row1 .col .row1-line3 textarea, .team-grouping .hmBody__inner .row1 .col .row1-line4 input, .team-grouping .hmBody__inner .row1 .col .row1-line4 select, .team-grouping .hmBody__inner .row1 .col .row1-line4 textarea, .team-grouping .hmBody__inner .row1 .col .row1-line5 input, .team-grouping .hmBody__inner .row1 .col .row1-line5 select, .team-grouping .hmBody__inner .row1 .col .row1-line5 textarea {
+  width: 99%;
+  resize: none;
+}
+.team-grouping .hmBody__inner .row1 .col .row1-line1 label, .team-grouping .hmBody__inner .row1 .col .row1-line2 label, .team-grouping .hmBody__inner .row1 .col .row1-line3 label, .team-grouping .hmBody__inner .row1 .col .row1-line4 label, .team-grouping .hmBody__inner .row1 .col .row1-line5 label {
+  width: 20%;
+}
+.team-grouping .hmBody__inner .row1 .col .row1-line1 button, .team-grouping .hmBody__inner .row1 .col .row1-line2 button, .team-grouping .hmBody__inner .row1 .col .row1-line3 button, .team-grouping .hmBody__inner .row1 .col .row1-line4 button, .team-grouping .hmBody__inner .row1 .col .row1-line5 button {
+  padding: 0.15rem 1.5rem;
+}
+.team-grouping .hmBody__inner .row1 .col .row1-line4 input {
+  height: 200px;
+}
+.team-grouping .hmBody__inner .row2 .col1 {
+  padding-left: 2rem;
+}
+.team-grouping .hmBody__inner .row2 .col1 .row2-line1, .team-grouping .hmBody__inner .row2 .col1 .row2-line2, .team-grouping .hmBody__inner .row2 .col1 .row2-line3 {
+  width: 100%;
+}
+.team-grouping .hmBody__inner .row2 .col1 .row2-line1 input, .team-grouping .hmBody__inner .row2 .col1 .row2-line1 select, .team-grouping .hmBody__inner .row2 .col1 .row2-line1 textarea, .team-grouping .hmBody__inner .row2 .col1 .row2-line2 input, .team-grouping .hmBody__inner .row2 .col1 .row2-line2 select, .team-grouping .hmBody__inner .row2 .col1 .row2-line2 textarea, .team-grouping .hmBody__inner .row2 .col1 .row2-line3 input, .team-grouping .hmBody__inner .row2 .col1 .row2-line3 select, .team-grouping .hmBody__inner .row2 .col1 .row2-line3 textarea {
+  resize: none;
+}
+.team-grouping .hmBody__inner .row2 .col1 .row2-line1 label, .team-grouping .hmBody__inner .row2 .col1 .row2-line2 label, .team-grouping .hmBody__inner .row2 .col1 .row2-line3 label {
+  width: 20%;
+}
+.team-grouping .hmBody__inner .row2 .col1 .row2-line1 button, .team-grouping .hmBody__inner .row2 .col1 .row2-line2 button, .team-grouping .hmBody__inner .row2 .col1 .row2-line3 button {
+  padding: 0.15rem 1.5rem;
+}
+@media (max-width: 767px) {
+  .team-grouping .hmBody__inner .row2 .col2 {
+    margin-top: 2rem !important;
+    margin-left: 0.7rem;
+  }
+}
+.team-grouping .hmBody__inner .row2 .col2 table {
+  width: 100%;
+}
+.team-grouping .hmBody__inner .row2 .col2 table th.search {
+  position: relative;
+}
+.team-grouping .hmBody__inner .row2 .col2 table th.search form {
+  display: none;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #222;
+  border-radius: 0.3rem;
+  width: 20rem;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 1rem;
+}
+.team-grouping .hmBody__inner .row2 .col2 table th.search form h6 {
+  border-bottom: 1px solid #222;
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+.team-grouping .hmBody__inner .row2 .col2 table th.search form .main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.7rem;
+}
+.team-grouping .hmBody__inner .row2 .col2 table th.search form .main .input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid #222 !important;
+  border-radius: 0.2rem;
+  width: 100%;
+  padding: 0.2rem;
+}
+.team-grouping .hmBody__inner .row2 .col2 table th.search form .main .input input {
+  background: none;
+  outline: none !important;
+  border: none !important;
+  font-size: 0.95rem !important;
+}
+.team-grouping .hmBody__inner .row2 .col2 table th.search form .main .input input::placeholder {
+  font-size: 0.95rem !important;
+}
+.team-grouping .hmBody__inner .row2 .col2 table th.search form .main .input i {
+  position: absolute;
+  right: 0.1rem;
+  top: 49%;
+  transform: translate(-50%, -50%);
+}
+.team-grouping .hmBody__inner .row2 .col2 table th.search form .main .btns .ok-btn {
+  padding: 0.1rem 1.5rem !important;
+  font-size: 0.95rem !important;
+}
+.team-grouping .hmBody__inner .row2 .col2 table th.search form .main .btns .cancel-btn {
+  padding: 0.1rem 1.5rem !important;
+  font-size: 0.95rem !important;
+}
+.team-grouping .hmBody__inner .row2 .col2 table, .team-grouping .hmBody__inner .row2 .col2 th, .team-grouping .hmBody__inner .row2 .col2 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.team-grouping .hmBody__inner .row2 .col2 .hmBody__inner table td, .team-grouping .hmBody__inner .row2 .col2 th {
+  padding: 3px;
+}
+.team-grouping .hmBody__inner .row2 .col2 table td select {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.team-grouping .hmBody__inner .row2 .col2 .box__top {
+  margin-bottom: 25px;
+}
+.team-grouping .hmBody__inner .row2 .col2 .blank__box {
+  height: 522px;
+  width: 100%;
+  overflow: scroll;
+  border: 1px solid #000;
+  /* border-top: 0px; */
+}
+.team-grouping .hmBody__inner .row2 .col2 .box__inner {
+  height: 1000px;
+  width: 800px;
+  background-color: #DBDBDB;
+}
+.team-grouping .hmBody__inner .row2 .col2 .box__bottom table td {
+  height: 25px;
+}
+.team-grouping .hmBody__inner .row2 .col2 .blank__box.bottom__box {
+  height: 500px;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .team-grouping .hmBody__inner .row2 .col2 .blank__box.bottom__box {
+    height: 300px;
+  }
+}
+.team-grouping .hmBody__inner .row2 .col2 .blank__box.bottom__box .box__inner {
+  width: 100%;
+}
+
+.project-management {
+  width: 99% !important;
+}
+.project-management .hmBody__inner select {
+  padding: 0.4rem 0.8rem;
+}
+.project-management .hmBody__inner button {
+  background-color: #D9D9D9;
+}
+.project-management .hmBody__inner .row1 {
+  padding: 2rem 0;
+}
+.project-management .hmBody__inner .row1 .col {
+  padding-left: 2.5rem;
+}
+.project-management .hmBody__inner .row1 .col .row1-line1, .project-management .hmBody__inner .row1 .col .row1-line2, .project-management .hmBody__inner .row1 .col .row1-line3, .project-management .hmBody__inner .row1 .col .row1-line4, .project-management .hmBody__inner .row1 .col .row1-line5 {
+  width: 100%;
+}
+.project-management .hmBody__inner .row1 .col .row1-line1 input, .project-management .hmBody__inner .row1 .col .row1-line1 select, .project-management .hmBody__inner .row1 .col .row1-line1 textarea, .project-management .hmBody__inner .row1 .col .row1-line2 input, .project-management .hmBody__inner .row1 .col .row1-line2 select, .project-management .hmBody__inner .row1 .col .row1-line2 textarea, .project-management .hmBody__inner .row1 .col .row1-line3 input, .project-management .hmBody__inner .row1 .col .row1-line3 select, .project-management .hmBody__inner .row1 .col .row1-line3 textarea, .project-management .hmBody__inner .row1 .col .row1-line4 input, .project-management .hmBody__inner .row1 .col .row1-line4 select, .project-management .hmBody__inner .row1 .col .row1-line4 textarea, .project-management .hmBody__inner .row1 .col .row1-line5 input, .project-management .hmBody__inner .row1 .col .row1-line5 select, .project-management .hmBody__inner .row1 .col .row1-line5 textarea {
+  resize: none;
+}
+.project-management .hmBody__inner .row1 .col .row1-line1 label, .project-management .hmBody__inner .row1 .col .row1-line2 label, .project-management .hmBody__inner .row1 .col .row1-line3 label, .project-management .hmBody__inner .row1 .col .row1-line4 label, .project-management .hmBody__inner .row1 .col .row1-line5 label {
+  width: 20%;
+}
+.project-management .hmBody__inner .row1 .col .row1-line1 button, .project-management .hmBody__inner .row1 .col .row1-line2 button, .project-management .hmBody__inner .row1 .col .row1-line3 button, .project-management .hmBody__inner .row1 .col .row1-line4 button, .project-management .hmBody__inner .row1 .col .row1-line5 button {
+  padding: 0.15rem 1.5rem;
+}
+.project-management .hmBody__inner .row1 .col .row1-line4 input {
+  height: 200px;
+}
+.project-management .hmBody__inner .row2 {
+  padding: 1rem 2.5rem;
+}
+.project-management .hmBody__inner .row2 .cols-wrapper {
+  border: 1px solid rgba(34, 34, 34, 0.2862745098);
+  padding: 1.5rem 0;
+}
+.project-management .hmBody__inner .row2 .cols-wrapper .col1 {
+  padding-left: 1.5rem;
+}
+.project-management .hmBody__inner .row2 .cols-wrapper .col1 .row2-line1, .project-management .hmBody__inner .row2 .cols-wrapper .col1 .row2-line2, .project-management .hmBody__inner .row2 .cols-wrapper .col1 .row2-line3 {
+  width: 100%;
+}
+.project-management .hmBody__inner .row2 .cols-wrapper .col1 .row2-line1 input, .project-management .hmBody__inner .row2 .cols-wrapper .col1 .row2-line1 select, .project-management .hmBody__inner .row2 .cols-wrapper .col1 .row2-line1 textarea, .project-management .hmBody__inner .row2 .cols-wrapper .col1 .row2-line2 input, .project-management .hmBody__inner .row2 .cols-wrapper .col1 .row2-line2 select, .project-management .hmBody__inner .row2 .cols-wrapper .col1 .row2-line2 textarea, .project-management .hmBody__inner .row2 .cols-wrapper .col1 .row2-line3 input, .project-management .hmBody__inner .row2 .cols-wrapper .col1 .row2-line3 select, .project-management .hmBody__inner .row2 .cols-wrapper .col1 .row2-line3 textarea {
+  resize: none;
+}
+.project-management .hmBody__inner .row2 .cols-wrapper .col1 .row2-line1 button, .project-management .hmBody__inner .row2 .cols-wrapper .col1 .row2-line2 button, .project-management .hmBody__inner .row2 .cols-wrapper .col1 .row2-line3 button {
+  padding: 0.15rem 1.5rem;
+}
+.project-management .hmBody__inner .row2 .cols-wrapper .col2 {
+  padding-left: 1.5rem;
+}
+.project-management .hmBody__inner .row2 .cols-wrapper .col2 table {
+  width: 100%;
+}
+.project-management .hmBody__inner .row2 .cols-wrapper .col2 table th.search {
+  position: relative;
+}
+.project-management .hmBody__inner .row2 .cols-wrapper .col2 table th.search form {
+  display: none;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #222;
+  border-radius: 0.3rem;
+  width: 20rem;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 1rem;
+}
+.project-management .hmBody__inner .row2 .cols-wrapper .col2 table th.search form h6 {
+  border-bottom: 1px solid #222;
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+.project-management .hmBody__inner .row2 .cols-wrapper .col2 table th.search form .main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.7rem;
+}
+.project-management .hmBody__inner .row2 .cols-wrapper .col2 table th.search form .main .input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid #222 !important;
+  border-radius: 0.2rem;
+  width: 100%;
+  padding: 0.2rem;
+}
+.project-management .hmBody__inner .row2 .cols-wrapper .col2 table th.search form .main .input input {
+  background: none;
+  outline: none !important;
+  border: none !important;
+  font-size: 0.95rem !important;
+}
+.project-management .hmBody__inner .row2 .cols-wrapper .col2 table th.search form .main .input input::placeholder {
+  font-size: 0.95rem !important;
+}
+.project-management .hmBody__inner .row2 .cols-wrapper .col2 table th.search form .main .input i {
+  position: absolute;
+  right: 0.1rem;
+  top: 49%;
+  transform: translate(-50%, -50%);
+}
+.project-management .hmBody__inner .row2 .cols-wrapper .col2 table th.search form .main .btns .ok-btn {
+  padding: 0.1rem 1.5rem !important;
+  font-size: 0.95rem !important;
+}
+.project-management .hmBody__inner .row2 .cols-wrapper .col2 table th.search form .main .btns .cancel-btn {
+  padding: 0.1rem 1.5rem !important;
+  font-size: 0.95rem !important;
+}
+.project-management .hmBody__inner .row2 .cols-wrapper .col2 table, .project-management .hmBody__inner .row2 .cols-wrapper .col2 th, .project-management .hmBody__inner .row2 .cols-wrapper .col2 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.project-management .hmBody__inner .row2 .cols-wrapper .col2 .hmBody__inner table td, .project-management .hmBody__inner .row2 .cols-wrapper .col2 th {
+  padding: 3px;
+}
+.project-management .hmBody__inner .row2 .cols-wrapper .col2 table td select {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.project-management .hmBody__inner .row2 .cols-wrapper .col2 .box__top {
+  margin-bottom: 25px;
+}
+.project-management .hmBody__inner .row2 .cols-wrapper .col2 .blank__box {
+  height: 522px;
+  width: 100%;
+  overflow: scroll;
+  border: 1px solid #000;
+  /* border-top: 0px; */
+}
+.project-management .hmBody__inner .row2 .cols-wrapper .col2 .box__inner {
+  height: 1000px;
+  width: 800px;
+  background-color: #DBDBDB;
+}
+.project-management .hmBody__inner .row2 .cols-wrapper .col2 .box__bottom table td {
+  height: 25px;
+}
+.project-management .hmBody__inner .row2 .cols-wrapper .col2 .blank__box.bottom__box {
+  height: 500px;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .project-management .hmBody__inner .row2 .cols-wrapper .col2 .blank__box.bottom__box {
+    height: 300px;
+  }
+}
+.project-management .hmBody__inner .row2 .cols-wrapper .col2 .blank__box.bottom__box .box__inner {
+  width: 100%;
+}
+.project-management .hmBody__inner .row2 .cols-wrapper .col2 .blank__box.bottom__box .box__inner table {
+  width: 35% !important;
+}
+
+.project-management-one {
+  width: 99% !important;
+}
+@media (max-width: 767px) {
+  .project-management-one {
+    width: 97% !important;
+  }
+}
+.project-management-one .hmBody__inner select {
+  padding: 0.4rem 0.8rem;
+}
+.project-management-one .hmBody__inner button {
+  background-color: #D9D9D9;
+}
+.project-management-one .hmBody__inner .hide, .project-management-one .hmBody__inner #hide {
+  visibility: hidden;
+}
+.project-management-one .hmBody__inner .row1 {
+  padding: 2rem 0;
+}
+.project-management-one .hmBody__inner .row1 .col {
+  padding-left: 2.5rem;
+}
+.project-management-one .hmBody__inner .row1 .col .row1-line1, .project-management-one .hmBody__inner .row1 .col .row1-line2, .project-management-one .hmBody__inner .row1 .col .row1-line3, .project-management-one .hmBody__inner .row1 .col .row1-line4, .project-management-one .hmBody__inner .row1 .col .row1-line5 {
+  width: 100%;
+}
+.project-management-one .hmBody__inner .row1 .col .row1-line1 input, .project-management-one .hmBody__inner .row1 .col .row1-line1 select, .project-management-one .hmBody__inner .row1 .col .row1-line1 textarea, .project-management-one .hmBody__inner .row1 .col .row1-line2 input, .project-management-one .hmBody__inner .row1 .col .row1-line2 select, .project-management-one .hmBody__inner .row1 .col .row1-line2 textarea, .project-management-one .hmBody__inner .row1 .col .row1-line3 input, .project-management-one .hmBody__inner .row1 .col .row1-line3 select, .project-management-one .hmBody__inner .row1 .col .row1-line3 textarea, .project-management-one .hmBody__inner .row1 .col .row1-line4 input, .project-management-one .hmBody__inner .row1 .col .row1-line4 select, .project-management-one .hmBody__inner .row1 .col .row1-line4 textarea, .project-management-one .hmBody__inner .row1 .col .row1-line5 input, .project-management-one .hmBody__inner .row1 .col .row1-line5 select, .project-management-one .hmBody__inner .row1 .col .row1-line5 textarea {
+  resize: none;
+}
+.project-management-one .hmBody__inner .row1 .col .row1-line1 label, .project-management-one .hmBody__inner .row1 .col .row1-line2 label, .project-management-one .hmBody__inner .row1 .col .row1-line3 label, .project-management-one .hmBody__inner .row1 .col .row1-line4 label, .project-management-one .hmBody__inner .row1 .col .row1-line5 label {
+  width: 20%;
+}
+.project-management-one .hmBody__inner .row1 .col .row1-line1 button, .project-management-one .hmBody__inner .row1 .col .row1-line2 button, .project-management-one .hmBody__inner .row1 .col .row1-line3 button, .project-management-one .hmBody__inner .row1 .col .row1-line4 button, .project-management-one .hmBody__inner .row1 .col .row1-line5 button {
+  padding: 0.15rem 1.5rem;
+}
+.project-management-one .hmBody__inner .row1 .col .row1-line4 input {
+  height: 200px;
+}
+.project-management-one .hmBody__inner .row2 {
+  padding: 1rem 2.5rem;
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper {
+  border: 1px solid rgba(34, 34, 34, 0.2862745098);
+  padding: 1.5rem 0;
+}
+@media (max-width: 767px) {
+  .project-management-one .hmBody__inner .row2 .cols-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper .col1 {
+  padding-left: 1.5rem;
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper .col1 .row2-line1, .project-management-one .hmBody__inner .row2 .cols-wrapper .col1 .row2-line2, .project-management-one .hmBody__inner .row2 .cols-wrapper .col1 .row2-line3 {
+  width: 100%;
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper .col1 .row2-line1 input, .project-management-one .hmBody__inner .row2 .cols-wrapper .col1 .row2-line1 select, .project-management-one .hmBody__inner .row2 .cols-wrapper .col1 .row2-line1 textarea, .project-management-one .hmBody__inner .row2 .cols-wrapper .col1 .row2-line2 input, .project-management-one .hmBody__inner .row2 .cols-wrapper .col1 .row2-line2 select, .project-management-one .hmBody__inner .row2 .cols-wrapper .col1 .row2-line2 textarea, .project-management-one .hmBody__inner .row2 .cols-wrapper .col1 .row2-line3 input, .project-management-one .hmBody__inner .row2 .cols-wrapper .col1 .row2-line3 select, .project-management-one .hmBody__inner .row2 .cols-wrapper .col1 .row2-line3 textarea {
+  resize: none;
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper .col1 .row2-line1 label, .project-management-one .hmBody__inner .row2 .cols-wrapper .col1 .row2-line2 label, .project-management-one .hmBody__inner .row2 .cols-wrapper .col1 .row2-line3 label {
+  width: 15%;
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper .col1 .row2-line1 button, .project-management-one .hmBody__inner .row2 .cols-wrapper .col1 .row2-line2 button, .project-management-one .hmBody__inner .row2 .cols-wrapper .col1 .row2-line3 button {
+  padding: 0.15rem 1.5rem;
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper .col2 {
+  padding-left: 1.5rem;
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper .col2 table {
+  width: 100%;
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper .col2 table th.search {
+  position: relative;
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper .col2 table th.search form {
+  display: none;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #222;
+  border-radius: 0.3rem;
+  width: 20rem;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 1rem;
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper .col2 table th.search form h6 {
+  border-bottom: 1px solid #222;
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper .col2 table th.search form .main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.7rem;
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper .col2 table th.search form .main .input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid #222 !important;
+  border-radius: 0.2rem;
+  width: 100%;
+  padding: 0.2rem;
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper .col2 table th.search form .main .input input {
+  background: none;
+  outline: none !important;
+  border: none !important;
+  font-size: 0.95rem !important;
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper .col2 table th.search form .main .input input::placeholder {
+  font-size: 0.95rem !important;
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper .col2 table th.search form .main .input i {
+  position: absolute;
+  right: 0.1rem;
+  top: 49%;
+  transform: translate(-50%, -50%);
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper .col2 table th.search form .main .btns .ok-btn {
+  padding: 0.1rem 1.5rem !important;
+  font-size: 0.95rem !important;
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper .col2 table th.search form .main .btns .cancel-btn {
+  padding: 0.1rem 1.5rem !important;
+  font-size: 0.95rem !important;
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper .col2 table, .project-management-one .hmBody__inner .row2 .cols-wrapper .col2 th, .project-management-one .hmBody__inner .row2 .cols-wrapper .col2 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper .col2 .hmBody__inner table td, .project-management-one .hmBody__inner .row2 .cols-wrapper .col2 th {
+  padding: 3px;
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper .col2 table td select {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper .col2 .box__top {
+  margin-bottom: 25px;
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper .col2 .blank__box {
+  height: 522px;
+  width: 100%;
+  overflow: scroll;
+  border: 1px solid #000;
+  /* border-top: 0px; */
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper .col2 .box__inner {
+  height: 1000px;
+  width: 800px;
+  background-color: #DBDBDB;
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper .col2 .box__bottom table td {
+  height: 25px;
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper .col2 .blank__box.bottom__box {
+  height: 300px;
+  width: 100%;
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper .col2 .blank__box.bottom__box .box__inner {
+  width: 100%;
+}
+.project-management-one .hmBody__inner .row2 .cols-wrapper .col2 .blank__box.bottom__box .box__inner table {
+  width: 35% !important;
+}
+
+.project-management-two {
+  width: 99% !important;
+}
+@media (max-width: 767px) {
+  .project-management-two {
+    width: 97% !important;
+  }
+}
+.project-management-two .hmBody__inner select {
+  padding: 0.4rem 0.8rem;
+}
+.project-management-two .hmBody__inner button {
+  background-color: #D9D9D9;
+}
+.project-management-two .hmBody__inner .hide, .project-management-two .hmBody__inner #hide {
+  visibility: hidden;
+}
+.project-management-two .hmBody__inner .row1 {
+  padding: 2rem 0;
+}
+.project-management-two .hmBody__inner .row1 .col {
+  padding-left: 2.5rem;
+}
+.project-management-two .hmBody__inner .row1 .col .row1-line1, .project-management-two .hmBody__inner .row1 .col .row1-line2, .project-management-two .hmBody__inner .row1 .col .row1-line3, .project-management-two .hmBody__inner .row1 .col .row1-line4, .project-management-two .hmBody__inner .row1 .col .row1-line5 {
+  width: 100%;
+}
+.project-management-two .hmBody__inner .row1 .col .row1-line1 input, .project-management-two .hmBody__inner .row1 .col .row1-line1 select, .project-management-two .hmBody__inner .row1 .col .row1-line1 textarea, .project-management-two .hmBody__inner .row1 .col .row1-line2 input, .project-management-two .hmBody__inner .row1 .col .row1-line2 select, .project-management-two .hmBody__inner .row1 .col .row1-line2 textarea, .project-management-two .hmBody__inner .row1 .col .row1-line3 input, .project-management-two .hmBody__inner .row1 .col .row1-line3 select, .project-management-two .hmBody__inner .row1 .col .row1-line3 textarea, .project-management-two .hmBody__inner .row1 .col .row1-line4 input, .project-management-two .hmBody__inner .row1 .col .row1-line4 select, .project-management-two .hmBody__inner .row1 .col .row1-line4 textarea, .project-management-two .hmBody__inner .row1 .col .row1-line5 input, .project-management-two .hmBody__inner .row1 .col .row1-line5 select, .project-management-two .hmBody__inner .row1 .col .row1-line5 textarea {
+  resize: none;
+}
+.project-management-two .hmBody__inner .row1 .col .row1-line1 label, .project-management-two .hmBody__inner .row1 .col .row1-line2 label, .project-management-two .hmBody__inner .row1 .col .row1-line3 label, .project-management-two .hmBody__inner .row1 .col .row1-line4 label, .project-management-two .hmBody__inner .row1 .col .row1-line5 label {
+  width: 20%;
+}
+.project-management-two .hmBody__inner .row1 .col .row1-line1 button, .project-management-two .hmBody__inner .row1 .col .row1-line2 button, .project-management-two .hmBody__inner .row1 .col .row1-line3 button, .project-management-two .hmBody__inner .row1 .col .row1-line4 button, .project-management-two .hmBody__inner .row1 .col .row1-line5 button {
+  padding: 0.15rem 1.5rem;
+}
+.project-management-two .hmBody__inner .row1 .col .row1-line4 input {
+  height: 200px;
+}
+.project-management-two .hmBody__inner .row2 {
+  padding: 1rem 2.5rem;
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper {
+  border: 1px solid rgba(34, 34, 34, 0.2862745098);
+  padding: 1.5rem 0;
+}
+@media (max-width: 767px) {
+  .project-management-two .hmBody__inner .row2 .cols-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper .col1 {
+  padding-left: 1.5rem;
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper .col1 .row2-line1, .project-management-two .hmBody__inner .row2 .cols-wrapper .col1 .row2-line2, .project-management-two .hmBody__inner .row2 .cols-wrapper .col1 .row2-line3 {
+  width: 100%;
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper .col1 .row2-line1 input, .project-management-two .hmBody__inner .row2 .cols-wrapper .col1 .row2-line1 select, .project-management-two .hmBody__inner .row2 .cols-wrapper .col1 .row2-line1 textarea, .project-management-two .hmBody__inner .row2 .cols-wrapper .col1 .row2-line2 input, .project-management-two .hmBody__inner .row2 .cols-wrapper .col1 .row2-line2 select, .project-management-two .hmBody__inner .row2 .cols-wrapper .col1 .row2-line2 textarea, .project-management-two .hmBody__inner .row2 .cols-wrapper .col1 .row2-line3 input, .project-management-two .hmBody__inner .row2 .cols-wrapper .col1 .row2-line3 select, .project-management-two .hmBody__inner .row2 .cols-wrapper .col1 .row2-line3 textarea {
+  resize: none;
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper .col1 .row2-line1 label, .project-management-two .hmBody__inner .row2 .cols-wrapper .col1 .row2-line2 label, .project-management-two .hmBody__inner .row2 .cols-wrapper .col1 .row2-line3 label {
+  width: 15%;
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper .col1 .row2-line1 button, .project-management-two .hmBody__inner .row2 .cols-wrapper .col1 .row2-line2 button, .project-management-two .hmBody__inner .row2 .cols-wrapper .col1 .row2-line3 button {
+  padding: 0.15rem 1.5rem;
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper .col2 {
+  padding-left: 1.5rem;
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper .col2 table {
+  width: 100%;
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper .col2 table th.search {
+  position: relative;
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper .col2 table th.search form {
+  display: none;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #222;
+  border-radius: 0.3rem;
+  width: 20rem;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 1rem;
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper .col2 table th.search form h6 {
+  border-bottom: 1px solid #222;
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper .col2 table th.search form .main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.7rem;
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper .col2 table th.search form .main .input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid #222 !important;
+  border-radius: 0.2rem;
+  width: 100%;
+  padding: 0.2rem;
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper .col2 table th.search form .main .input input {
+  background: none;
+  outline: none !important;
+  border: none !important;
+  font-size: 0.95rem !important;
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper .col2 table th.search form .main .input input::placeholder {
+  font-size: 0.95rem !important;
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper .col2 table th.search form .main .input i {
+  position: absolute;
+  right: 0.1rem;
+  top: 49%;
+  transform: translate(-50%, -50%);
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper .col2 table th.search form .main .btns .ok-btn {
+  padding: 0.1rem 1.5rem !important;
+  font-size: 0.95rem !important;
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper .col2 table th.search form .main .btns .cancel-btn {
+  padding: 0.1rem 1.5rem !important;
+  font-size: 0.95rem !important;
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper .col2 table, .project-management-two .hmBody__inner .row2 .cols-wrapper .col2 th, .project-management-two .hmBody__inner .row2 .cols-wrapper .col2 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper .col2 .hmBody__inner table td, .project-management-two .hmBody__inner .row2 .cols-wrapper .col2 th {
+  padding: 3px;
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper .col2 table td select {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper .col2 .box__top {
+  margin-bottom: 25px;
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper .col2 .blank__box {
+  height: 522px;
+  width: 100%;
+  overflow: scroll;
+  border: 1px solid #000;
+  /* border-top: 0px; */
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper .col2 .box__inner {
+  height: 1000px;
+  width: 800px;
+  background-color: #DBDBDB;
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper .col2 .box__bottom table td {
+  height: 25px;
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper .col2 .blank__box.bottom__box {
+  height: 300px;
+  width: 100%;
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper .col2 .blank__box.bottom__box .box__inner {
+  width: 100%;
+}
+.project-management-two .hmBody__inner .row2 .cols-wrapper .col2 .blank__box.bottom__box .box__inner table {
+  width: 35% !important;
+}
+
+.project-management-three {
+  width: 99% !important;
+}
+@media (max-width: 767px) {
+  .project-management-three {
+    width: 97% !important;
+  }
+}
+.project-management-three .hmBody__inner button {
+  background-color: #D9D9D9;
+}
+.project-management-three .hmBody__inner .row1 {
+  padding: 2rem 0;
+}
+.project-management-three .hmBody__inner .row1 .col {
+  padding-left: 2.5rem;
+}
+.project-management-three .hmBody__inner .row1 .col .row1-line1, .project-management-three .hmBody__inner .row1 .col .row1-line2, .project-management-three .hmBody__inner .row1 .col .row1-line3, .project-management-three .hmBody__inner .row1 .col .row1-line4, .project-management-three .hmBody__inner .row1 .col .row1-line5 {
+  width: 100%;
+}
+.project-management-three .hmBody__inner .row1 .col .row1-line1 input, .project-management-three .hmBody__inner .row1 .col .row1-line1 select, .project-management-three .hmBody__inner .row1 .col .row1-line1 textarea, .project-management-three .hmBody__inner .row1 .col .row1-line2 input, .project-management-three .hmBody__inner .row1 .col .row1-line2 select, .project-management-three .hmBody__inner .row1 .col .row1-line2 textarea, .project-management-three .hmBody__inner .row1 .col .row1-line3 input, .project-management-three .hmBody__inner .row1 .col .row1-line3 select, .project-management-three .hmBody__inner .row1 .col .row1-line3 textarea, .project-management-three .hmBody__inner .row1 .col .row1-line4 input, .project-management-three .hmBody__inner .row1 .col .row1-line4 select, .project-management-three .hmBody__inner .row1 .col .row1-line4 textarea, .project-management-three .hmBody__inner .row1 .col .row1-line5 input, .project-management-three .hmBody__inner .row1 .col .row1-line5 select, .project-management-three .hmBody__inner .row1 .col .row1-line5 textarea {
+  resize: none;
+}
+.project-management-three .hmBody__inner .row1 .col .row1-line1 label, .project-management-three .hmBody__inner .row1 .col .row1-line2 label, .project-management-three .hmBody__inner .row1 .col .row1-line3 label, .project-management-three .hmBody__inner .row1 .col .row1-line4 label, .project-management-three .hmBody__inner .row1 .col .row1-line5 label {
+  width: 20%;
+}
+.project-management-three .hmBody__inner .row1 .col .row1-line1 button, .project-management-three .hmBody__inner .row1 .col .row1-line2 button, .project-management-three .hmBody__inner .row1 .col .row1-line3 button, .project-management-three .hmBody__inner .row1 .col .row1-line4 button, .project-management-three .hmBody__inner .row1 .col .row1-line5 button {
+  padding: 0.15rem 1.5rem;
+}
+.project-management-three .hmBody__inner .row1 .col .row1-line4 input {
+  height: 200px;
+}
+.project-management-three .hmBody__inner .row2 {
+  padding: 1.5rem;
+}
+.project-management-three .hmBody__inner .row2 .col {
+  width: 100%;
+  height: 100%;
+}
+.project-management-three .hmBody__inner .row2 .col .wrapper {
+  width: 100%;
+  height: 70vh;
+  background: #B4B4B4 !important;
+}
+@media (max-width: 767px) {
+  .project-management-three .hmBody__inner .row2 .col .wrapper {
+    height: 40vh;
+  }
+}
+
+.company-letterhead {
+  width: 99% !important;
+}
+@media (max-width: 767px) {
+  .company-letterhead {
+    width: 97% !important;
+  }
+}
+.company-letterhead .hmBody__inner {
+  width: 100%;
+}
+.company-letterhead .hmBody__inner select {
+  padding: 0.4rem 0.8rem;
+}
+.company-letterhead .hmBody__inner .row1 {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 2rem 2.5rem !important;
+}
+@media (max-width: 767px) {
+  .company-letterhead .hmBody__inner .row1 {
+    padding: 1.5rem 1rem !important;
+  }
+}
+.company-letterhead .hmBody__inner .row1 .col1 .btns {
+  justify-content: flex-end;
+}
+@media (max-width: 767px) {
+  .company-letterhead .hmBody__inner .row1 .col1 .btns {
+    justify-content: flex-start;
+  }
+}
+.company-letterhead .hmBody__inner .row1 .col1 .row1-line1, .company-letterhead .hmBody__inner .row1 .col1 .row1-line2, .company-letterhead .hmBody__inner .row1 .col1 .row1-line3, .company-letterhead .hmBody__inner .row1 .col1 .row1-line4, .company-letterhead .hmBody__inner .row1 .col1 .row1-line5, .company-letterhead .hmBody__inner .row1 .col1 .row1-line6 {
+  width: 100%;
+}
+.company-letterhead .hmBody__inner .row1 .col1 .row1-line1 input, .company-letterhead .hmBody__inner .row1 .col1 .row1-line1 select, .company-letterhead .hmBody__inner .row1 .col1 .row1-line2 input, .company-letterhead .hmBody__inner .row1 .col1 .row1-line2 select, .company-letterhead .hmBody__inner .row1 .col1 .row1-line3 input, .company-letterhead .hmBody__inner .row1 .col1 .row1-line3 select, .company-letterhead .hmBody__inner .row1 .col1 .row1-line4 input, .company-letterhead .hmBody__inner .row1 .col1 .row1-line4 select, .company-letterhead .hmBody__inner .row1 .col1 .row1-line5 input, .company-letterhead .hmBody__inner .row1 .col1 .row1-line5 select, .company-letterhead .hmBody__inner .row1 .col1 .row1-line6 input, .company-letterhead .hmBody__inner .row1 .col1 .row1-line6 select {
+  width: 80%;
+}
+@media (max-width: 767px) {
+  .company-letterhead .hmBody__inner .row1 .col1 .row1-line1 input, .company-letterhead .hmBody__inner .row1 .col1 .row1-line1 select, .company-letterhead .hmBody__inner .row1 .col1 .row1-line2 input, .company-letterhead .hmBody__inner .row1 .col1 .row1-line2 select, .company-letterhead .hmBody__inner .row1 .col1 .row1-line3 input, .company-letterhead .hmBody__inner .row1 .col1 .row1-line3 select, .company-letterhead .hmBody__inner .row1 .col1 .row1-line4 input, .company-letterhead .hmBody__inner .row1 .col1 .row1-line4 select, .company-letterhead .hmBody__inner .row1 .col1 .row1-line5 input, .company-letterhead .hmBody__inner .row1 .col1 .row1-line5 select, .company-letterhead .hmBody__inner .row1 .col1 .row1-line6 input, .company-letterhead .hmBody__inner .row1 .col1 .row1-line6 select {
+    width: 100%;
+  }
+}
+.company-letterhead .hmBody__inner .row1 .col1 .row1-line1 label, .company-letterhead .hmBody__inner .row1 .col1 .row1-line2 label, .company-letterhead .hmBody__inner .row1 .col1 .row1-line3 label, .company-letterhead .hmBody__inner .row1 .col1 .row1-line4 label, .company-letterhead .hmBody__inner .row1 .col1 .row1-line5 label, .company-letterhead .hmBody__inner .row1 .col1 .row1-line6 label {
+  width: 18%;
+}
+@media (max-width: 767px) {
+  .company-letterhead .hmBody__inner .row1 .col1 .row1-line1 label, .company-letterhead .hmBody__inner .row1 .col1 .row1-line2 label, .company-letterhead .hmBody__inner .row1 .col1 .row1-line3 label, .company-letterhead .hmBody__inner .row1 .col1 .row1-line4 label, .company-letterhead .hmBody__inner .row1 .col1 .row1-line5 label, .company-letterhead .hmBody__inner .row1 .col1 .row1-line6 label {
+    width: 22%;
+  }
+}
+.company-letterhead .hmBody__inner .row1 .col1 .row1-line1 button, .company-letterhead .hmBody__inner .row1 .col1 .row1-line2 button, .company-letterhead .hmBody__inner .row1 .col1 .row1-line3 button, .company-letterhead .hmBody__inner .row1 .col1 .row1-line4 button, .company-letterhead .hmBody__inner .row1 .col1 .row1-line5 button, .company-letterhead .hmBody__inner .row1 .col1 .row1-line6 button {
+  padding: 0.15rem 1.5rem;
+  background-color: #D9D9D9;
+}
+@media (min-width: 768px) {
+  .company-letterhead .hmBody__inner .row1 .col1 .row1-line1 .first, .company-letterhead .hmBody__inner .row1 .col1 .row1-line2 .first, .company-letterhead .hmBody__inner .row1 .col1 .row1-line3 .first, .company-letterhead .hmBody__inner .row1 .col1 .row1-line4 .first, .company-letterhead .hmBody__inner .row1 .col1 .row1-line5 .first, .company-letterhead .hmBody__inner .row1 .col1 .row1-line6 .first {
+    width: 53% !important;
+  }
+  .company-letterhead .hmBody__inner .row1 .col1 .row1-line1 .second, .company-letterhead .hmBody__inner .row1 .col1 .row1-line2 .second, .company-letterhead .hmBody__inner .row1 .col1 .row1-line3 .second, .company-letterhead .hmBody__inner .row1 .col1 .row1-line4 .second, .company-letterhead .hmBody__inner .row1 .col1 .row1-line5 .second, .company-letterhead .hmBody__inner .row1 .col1 .row1-line6 .second {
+    width: 45% !important;
+  }
+}
+.company-letterhead .hmBody__inner .row1 .col2 {
+  display: flex;
+  justify-content: flex-start !important;
+}
+@media (max-width: 767px) {
+  .company-letterhead .hmBody__inner .row1 .col2 {
+    margin-top: 3rem;
+  }
+}
+.company-letterhead .hmBody__inner .row1 .col2 .wrapper div {
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .company-letterhead .hmBody__inner .row1 .col2 .wrapper div {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+.company-letterhead .hmBody__inner .row1 .col2 .wrapper div div button {
+  padding: 0.15rem 1.5rem;
+  background-color: #D9D9D9;
+}
+.company-letterhead .hmBody__inner .row1 .col2 .wrapper div .img-wrapper {
+  background-color: #b4b4b4;
+  width: 22rem;
+  height: 11rem;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .company-letterhead .hmBody__inner .row1 .col2 .wrapper div .img-wrapper {
+    margin-top: 2rem;
+    width: 100%;
+  }
+}
+.company-letterhead .hmBody__inner .row2 .cols-wrapper .col1 {
+  padding: 2rem 1.5rem !important;
+}
+.company-letterhead .hmBody__inner .row2 .cols-wrapper .col1 table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+.company-letterhead .hmBody__inner .row2 .cols-wrapper .col1 table th.search {
+  position: relative;
+}
+.company-letterhead .hmBody__inner .row2 .cols-wrapper .col1 table th.search form {
+  display: none;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #222;
+  border-radius: 0.3rem;
+  width: 20rem;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 1rem;
+}
+.company-letterhead .hmBody__inner .row2 .cols-wrapper .col1 table th.search form h6 {
+  border-bottom: 1px solid #222;
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+.company-letterhead .hmBody__inner .row2 .cols-wrapper .col1 table th.search form .main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.7rem;
+}
+.company-letterhead .hmBody__inner .row2 .cols-wrapper .col1 table th.search form .main .input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid #222 !important;
+  border-radius: 0.2rem;
+  width: 100%;
+  padding: 0.2rem;
+}
+.company-letterhead .hmBody__inner .row2 .cols-wrapper .col1 table th.search form .main .input input {
+  background: none;
+  outline: none !important;
+  border: none !important;
+  font-size: 0.95rem !important;
+}
+.company-letterhead .hmBody__inner .row2 .cols-wrapper .col1 table th.search form .main .input input::placeholder {
+  font-size: 0.95rem !important;
+}
+.company-letterhead .hmBody__inner .row2 .cols-wrapper .col1 table th.search form .main .input i {
+  position: absolute;
+  right: 0.1rem;
+  top: 49%;
+  transform: translate(-50%, -50%);
+}
+.company-letterhead .hmBody__inner .row2 .cols-wrapper .col1 table th.search form .main .btns .ok-btn {
+  padding: 0.1rem 1.5rem !important;
+  font-size: 0.95rem !important;
+}
+.company-letterhead .hmBody__inner .row2 .cols-wrapper .col1 table th.search form .main .btns .cancel-btn {
+  padding: 0.1rem 1.5rem !important;
+  font-size: 0.95rem !important;
+}
+.company-letterhead .hmBody__inner .row2 .cols-wrapper .col1 table, .company-letterhead .hmBody__inner .row2 .cols-wrapper .col1 th, .company-letterhead .hmBody__inner .row2 .cols-wrapper .col1 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.company-letterhead .hmBody__inner .row2 .cols-wrapper .col1 .hmBody__inner table td, .company-letterhead .hmBody__inner .row2 .cols-wrapper .col1 th {
+  padding: 3px;
+}
+.company-letterhead .hmBody__inner .row2 .cols-wrapper .col1 table td select {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.company-letterhead .hmBody__inner .row2 .cols-wrapper .col1 .box__top {
+  margin-bottom: 25px;
+}
+.company-letterhead .hmBody__inner .row2 .cols-wrapper .col1 .blank__box {
+  height: 522px;
+  width: 100%;
+  overflow: scroll;
+  border: 1px solid #000;
+  /* border-top: 0px; */
+}
+.company-letterhead .hmBody__inner .row2 .cols-wrapper .col1 .box__inner {
+  height: 1000px;
+  width: 2000px !important;
+  background-color: #DBDBDB;
+}
+.company-letterhead .hmBody__inner .row2 .cols-wrapper .col1 .box__bottom table td {
+  height: 25px;
+}
+.company-letterhead .hmBody__inner .row2 .cols-wrapper .col1 .blank__box.bottom__box {
+  height: 500px;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .company-letterhead .hmBody__inner .row2 .cols-wrapper .col1 .blank__box.bottom__box {
+    height: 350px;
+  }
+}
+.company-letterhead .hmBody__inner .row2 .cols-wrapper .col1 .blank__box.bottom__box .box__inner {
+  width: 100%;
+}
+.company-letterhead .hmBody__inner .row2 .cols-wrapper .col1 .blank__box.bottom__box .box__inner table {
+  width: 100% !important;
+}
+
+.operating-expenses {
+  width: 99% !important;
+}
+@media (max-width: 767px) {
+  .operating-expenses {
+    width: 97% !important;
+  }
+}
+.operating-expenses .hmBody__inner {
+  width: 100%;
+}
+.operating-expenses .hmBody__inner select {
+  padding: 0.4rem 0.8rem;
+}
+.operating-expenses .hmBody__inner .row1 {
+  padding: 2rem 2.5rem !important;
+  padding-bottom: 1rem !important;
+}
+.operating-expenses .hmBody__inner .row2 {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 2rem 2.5rem !important;
+}
+.operating-expenses .hmBody__inner .row2 .col .row2-wrapper {
+  border: 1px solid rgba(34, 34, 34, 0.2549019608) !important;
+  padding: 1rem;
+  width: 100%;
+}
+.operating-expenses .hmBody__inner .row2 .col .row2-line1, .operating-expenses .hmBody__inner .row2 .col .row2-line2, .operating-expenses .hmBody__inner .row2 .col .row2-line3, .operating-expenses .hmBody__inner .row2 .col .row2-line4, .operating-expenses .hmBody__inner .row2 .col .row2-line5 {
+  width: 100%;
+}
+.operating-expenses .hmBody__inner .row2 .col .row2-line1 input, .operating-expenses .hmBody__inner .row2 .col .row2-line1 select, .operating-expenses .hmBody__inner .row2 .col .row2-line2 input, .operating-expenses .hmBody__inner .row2 .col .row2-line2 select, .operating-expenses .hmBody__inner .row2 .col .row2-line3 input, .operating-expenses .hmBody__inner .row2 .col .row2-line3 select, .operating-expenses .hmBody__inner .row2 .col .row2-line4 input, .operating-expenses .hmBody__inner .row2 .col .row2-line4 select, .operating-expenses .hmBody__inner .row2 .col .row2-line5 input, .operating-expenses .hmBody__inner .row2 .col .row2-line5 select {
+  width: 80%;
+}
+.operating-expenses .hmBody__inner .row2 .col .row2-line1 button, .operating-expenses .hmBody__inner .row2 .col .row2-line2 button, .operating-expenses .hmBody__inner .row2 .col .row2-line3 button, .operating-expenses .hmBody__inner .row2 .col .row2-line4 button, .operating-expenses .hmBody__inner .row2 .col .row2-line5 button {
+  padding: 0.15rem 1.5rem;
+  background-color: #D9D9D9;
+}
+.operating-expenses .hmBody__inner .row2 .col .row2-line3 div {
+  width: 85%;
+}
+.operating-expenses .hmBody__inner .row2 .col .row2-line3 div input {
+  width: 100% !important;
+}
+.operating-expenses .hmBody__inner .row2 .col .cols-wrapper .col1 table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+.operating-expenses .hmBody__inner .row2 .col .cols-wrapper .col1 table th.search {
+  position: relative;
+}
+.operating-expenses .hmBody__inner .row2 .col .cols-wrapper .col1 table th.search form {
+  display: none;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #222;
+  border-radius: 0.3rem;
+  width: 20rem;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 1rem;
+}
+.operating-expenses .hmBody__inner .row2 .col .cols-wrapper .col1 table th.search form h6 {
+  border-bottom: 1px solid #222;
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+.operating-expenses .hmBody__inner .row2 .col .cols-wrapper .col1 table th.search form .main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.7rem;
+}
+.operating-expenses .hmBody__inner .row2 .col .cols-wrapper .col1 table th.search form .main .input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid #222 !important;
+  border-radius: 0.2rem;
+  width: 100%;
+  padding: 0.2rem;
+}
+.operating-expenses .hmBody__inner .row2 .col .cols-wrapper .col1 table th.search form .main .input input {
+  background: none;
+  outline: none !important;
+  border: none !important;
+  font-size: 0.95rem !important;
+}
+.operating-expenses .hmBody__inner .row2 .col .cols-wrapper .col1 table th.search form .main .input input::placeholder {
+  font-size: 0.95rem !important;
+}
+.operating-expenses .hmBody__inner .row2 .col .cols-wrapper .col1 table th.search form .main .input i {
+  position: absolute;
+  right: 0.1rem;
+  top: 49%;
+  transform: translate(-50%, -50%);
+}
+.operating-expenses .hmBody__inner .row2 .col .cols-wrapper .col1 table th.search form .main .btns .ok-btn {
+  padding: 0.1rem 1.5rem !important;
+  font-size: 0.95rem !important;
+}
+.operating-expenses .hmBody__inner .row2 .col .cols-wrapper .col1 table th.search form .main .btns .cancel-btn {
+  padding: 0.1rem 1.5rem !important;
+  font-size: 0.95rem !important;
+}
+.operating-expenses .hmBody__inner .row2 .col .cols-wrapper .col1 table, .operating-expenses .hmBody__inner .row2 .col .cols-wrapper .col1 th, .operating-expenses .hmBody__inner .row2 .col .cols-wrapper .col1 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.operating-expenses .hmBody__inner .row2 .col .cols-wrapper .col1 .hmBody__inner table td, .operating-expenses .hmBody__inner .row2 .col .cols-wrapper .col1 th {
+  padding: 3px;
+}
+.operating-expenses .hmBody__inner .row2 .col .cols-wrapper .col1 table td select {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.operating-expenses .hmBody__inner .row2 .col .cols-wrapper .col1 .box__top {
+  margin-bottom: 25px;
+}
+.operating-expenses .hmBody__inner .row2 .col .cols-wrapper .col1 .blank__box {
+  height: 522px;
+  width: 100%;
+  overflow: scroll;
+  border: 1px solid #000;
+  /* border-top: 0px; */
+}
+.operating-expenses .hmBody__inner .row2 .col .cols-wrapper .col1 .box__inner {
+  height: 800px;
+  width: 100%;
+  background-color: #DBDBDB;
+}
+.operating-expenses .hmBody__inner .row2 .col .cols-wrapper .col1 .box__bottom table td {
+  height: 25px;
+}
+.operating-expenses .hmBody__inner .row2 .col .cols-wrapper .col1 .blank__box.bottom__box {
+  height: 200px;
+  width: 100%;
+}
+.operating-expenses .hmBody__inner .row2 .col .cols-wrapper .col1 .blank__box.bottom__box .box__inner {
+  width: 100%;
+}
+.operating-expenses .hmBody__inner .row2 .col .cols-wrapper .col1 .blank__box.bottom__box .box__inner table {
+  width: 100% !important;
+}
+.operating-expenses .hmBody__inner .row3 {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0rem 2.5rem !important;
+}
+.operating-expenses .hmBody__inner .row3 .col .row3-line1, .operating-expenses .hmBody__inner .row3 .col .row3-line2, .operating-expenses .hmBody__inner .row3 .col .row3-line3, .operating-expenses .hmBody__inner .row3 .col .row3-line4 {
+  width: 100%;
+}
+.operating-expenses .hmBody__inner .row3 .col .row3-line1 input, .operating-expenses .hmBody__inner .row3 .col .row3-line1 select, .operating-expenses .hmBody__inner .row3 .col .row3-line2 input, .operating-expenses .hmBody__inner .row3 .col .row3-line2 select, .operating-expenses .hmBody__inner .row3 .col .row3-line3 input, .operating-expenses .hmBody__inner .row3 .col .row3-line3 select, .operating-expenses .hmBody__inner .row3 .col .row3-line4 input, .operating-expenses .hmBody__inner .row3 .col .row3-line4 select {
+  width: 80%;
+}
+.operating-expenses .hmBody__inner .row3 .col .row3-line1 button, .operating-expenses .hmBody__inner .row3 .col .row3-line2 button, .operating-expenses .hmBody__inner .row3 .col .row3-line3 button, .operating-expenses .hmBody__inner .row3 .col .row3-line4 button {
+  padding: 0.15rem 1.5rem;
+  background-color: #D9D9D9;
+}
+.operating-expenses .hmBody__inner .row3 .col .row3-line3 div {
+  width: 85%;
+}
+.operating-expenses .hmBody__inner .row3 .col .row3-line3 div input {
+  width: 100% !important;
+}
+.operating-expenses .hmBody__inner .row3 .col .cols-wrapper .col1 table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+.operating-expenses .hmBody__inner .row3 .col .cols-wrapper .col1 table th.search {
+  position: relative;
+}
+.operating-expenses .hmBody__inner .row3 .col .cols-wrapper .col1 table th.search form {
+  display: none;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #222;
+  border-radius: 0.3rem;
+  width: 20rem;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 1rem;
+}
+.operating-expenses .hmBody__inner .row3 .col .cols-wrapper .col1 table th.search form h6 {
+  border-bottom: 1px solid #222;
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+.operating-expenses .hmBody__inner .row3 .col .cols-wrapper .col1 table th.search form .main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.7rem;
+}
+.operating-expenses .hmBody__inner .row3 .col .cols-wrapper .col1 table th.search form .main .input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid #222 !important;
+  border-radius: 0.2rem;
+  width: 100%;
+  padding: 0.2rem;
+}
+.operating-expenses .hmBody__inner .row3 .col .cols-wrapper .col1 table th.search form .main .input input {
+  background: none;
+  outline: none !important;
+  border: none !important;
+  font-size: 0.95rem !important;
+}
+.operating-expenses .hmBody__inner .row3 .col .cols-wrapper .col1 table th.search form .main .input input::placeholder {
+  font-size: 0.95rem !important;
+}
+.operating-expenses .hmBody__inner .row3 .col .cols-wrapper .col1 table th.search form .main .input i {
+  position: absolute;
+  right: 0.1rem;
+  top: 49%;
+  transform: translate(-50%, -50%);
+}
+.operating-expenses .hmBody__inner .row3 .col .cols-wrapper .col1 table th.search form .main .btns .ok-btn {
+  padding: 0.1rem 1.5rem !important;
+  font-size: 0.95rem !important;
+}
+.operating-expenses .hmBody__inner .row3 .col .cols-wrapper .col1 table th.search form .main .btns .cancel-btn {
+  padding: 0.1rem 1.5rem !important;
+  font-size: 0.95rem !important;
+}
+.operating-expenses .hmBody__inner .row3 .col .cols-wrapper .col1 table, .operating-expenses .hmBody__inner .row3 .col .cols-wrapper .col1 th, .operating-expenses .hmBody__inner .row3 .col .cols-wrapper .col1 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.operating-expenses .hmBody__inner .row3 .col .cols-wrapper .col1 .hmBody__inner table td, .operating-expenses .hmBody__inner .row3 .col .cols-wrapper .col1 th {
+  padding: 3px;
+}
+.operating-expenses .hmBody__inner .row3 .col .cols-wrapper .col1 table td select {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.operating-expenses .hmBody__inner .row3 .col .cols-wrapper .col1 .box__top {
+  margin-bottom: 25px;
+}
+.operating-expenses .hmBody__inner .row3 .col .cols-wrapper .col1 .blank__box {
+  height: 522px;
+  width: 100%;
+  overflow: scroll;
+  border: 1px solid #000;
+  /* border-top: 0px; */
+}
+.operating-expenses .hmBody__inner .row3 .col .cols-wrapper .col1 .box__inner {
+  height: 800px;
+  width: 100%;
+  background-color: #DBDBDB;
+}
+.operating-expenses .hmBody__inner .row3 .col .cols-wrapper .col1 .box__bottom table td {
+  height: 25px;
+}
+.operating-expenses .hmBody__inner .row3 .col .cols-wrapper .col1 .blank__box.bottom__box {
+  height: 200px;
+  width: 100%;
+}
+.operating-expenses .hmBody__inner .row3 .col .cols-wrapper .col1 .blank__box.bottom__box .box__inner {
+  width: 100%;
+}
+.operating-expenses .hmBody__inner .row3 .col .cols-wrapper .col1 .blank__box.bottom__box .box__inner table {
+  width: 100% !important;
+}
+
+.adjustments {
+  width: 99% !important;
+}
+@media (max-width: 767px) {
+  .adjustments {
+    width: 97% !important;
+  }
+}
+.adjustments .hmBody__inner {
+  width: 100%;
+}
+.adjustments .hmBody__inner select {
+  padding: 0.4rem 0.8rem;
+}
+.adjustments .hmBody__inner .row1 {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 2rem 2.5rem !important;
+}
+@media (max-width: 767px) {
+  .adjustments .hmBody__inner .row1 .col .row2-wrapper input, .adjustments .hmBody__inner .row1 .col .row2-wrapper select {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .adjustments .hmBody__inner .row1 .col .row2-wrapper label {
+    width: 40%;
+  }
+}
+.adjustments .hmBody__inner .row1 .col .row2-line1, .adjustments .hmBody__inner .row1 .col .row2-line2, .adjustments .hmBody__inner .row1 .col .row2-line3, .adjustments .hmBody__inner .row1 .col .row2-line4, .adjustments .hmBody__inner .row1 .col .row2-line5 {
+  width: 100%;
+}
+.adjustments .hmBody__inner .row1 .col .row2-line1 input, .adjustments .hmBody__inner .row1 .col .row2-line1 select, .adjustments .hmBody__inner .row1 .col .row2-line2 input, .adjustments .hmBody__inner .row1 .col .row2-line2 select, .adjustments .hmBody__inner .row1 .col .row2-line3 input, .adjustments .hmBody__inner .row1 .col .row2-line3 select, .adjustments .hmBody__inner .row1 .col .row2-line4 input, .adjustments .hmBody__inner .row1 .col .row2-line4 select, .adjustments .hmBody__inner .row1 .col .row2-line5 input, .adjustments .hmBody__inner .row1 .col .row2-line5 select {
+  width: 80%;
+}
+.adjustments .hmBody__inner .row1 .col .row2-line1 button, .adjustments .hmBody__inner .row1 .col .row2-line2 button, .adjustments .hmBody__inner .row1 .col .row2-line3 button, .adjustments .hmBody__inner .row1 .col .row2-line4 button, .adjustments .hmBody__inner .row1 .col .row2-line5 button {
+  padding: 0.15rem 1.5rem;
+  background-color: #D9D9D9;
+}
+.adjustments .hmBody__inner .row1 .col .row2-line3 div {
+  width: 100%;
+}
+.adjustments .hmBody__inner .row1 .col .row2-line3 div input {
+  width: 40% !important;
+}
+@media (max-width: 767px) {
+  .adjustments .hmBody__inner .row1 .col .row2-line3 div input {
+    width: 100% !important;
+  }
+}
+.adjustments .hmBody__inner .row1 .col .cols-wrapper .col1 table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+.adjustments .hmBody__inner .row1 .col .cols-wrapper .col1 table th.search {
+  position: relative;
+}
+.adjustments .hmBody__inner .row1 .col .cols-wrapper .col1 table th.search form {
+  display: none;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #222;
+  border-radius: 0.3rem;
+  width: 20rem;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 1rem;
+}
+.adjustments .hmBody__inner .row1 .col .cols-wrapper .col1 table th.search form h6 {
+  border-bottom: 1px solid #222;
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+.adjustments .hmBody__inner .row1 .col .cols-wrapper .col1 table th.search form .main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.7rem;
+}
+.adjustments .hmBody__inner .row1 .col .cols-wrapper .col1 table th.search form .main .input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid #222 !important;
+  border-radius: 0.2rem;
+  width: 100%;
+  padding: 0.2rem;
+}
+.adjustments .hmBody__inner .row1 .col .cols-wrapper .col1 table th.search form .main .input input {
+  background: none;
+  outline: none !important;
+  border: none !important;
+  font-size: 0.95rem !important;
+}
+.adjustments .hmBody__inner .row1 .col .cols-wrapper .col1 table th.search form .main .input input::placeholder {
+  font-size: 0.95rem !important;
+}
+.adjustments .hmBody__inner .row1 .col .cols-wrapper .col1 table th.search form .main .input i {
+  position: absolute;
+  right: 0.1rem;
+  top: 49%;
+  transform: translate(-50%, -50%);
+}
+.adjustments .hmBody__inner .row1 .col .cols-wrapper .col1 table th.search form .main .btns .ok-btn {
+  padding: 0.1rem 1.5rem !important;
+  font-size: 0.95rem !important;
+}
+.adjustments .hmBody__inner .row1 .col .cols-wrapper .col1 table th.search form .main .btns .cancel-btn {
+  padding: 0.1rem 1.5rem !important;
+  font-size: 0.95rem !important;
+}
+.adjustments .hmBody__inner .row1 .col .cols-wrapper .col1 table, .adjustments .hmBody__inner .row1 .col .cols-wrapper .col1 th, .adjustments .hmBody__inner .row1 .col .cols-wrapper .col1 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.adjustments .hmBody__inner .row1 .col .cols-wrapper .col1 .hmBody__inner table td, .adjustments .hmBody__inner .row1 .col .cols-wrapper .col1 th {
+  padding: 3px;
+}
+.adjustments .hmBody__inner .row1 .col .cols-wrapper .col1 table td select {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.adjustments .hmBody__inner .row1 .col .cols-wrapper .col1 .box__top {
+  margin-bottom: 25px;
+}
+.adjustments .hmBody__inner .row1 .col .cols-wrapper .col1 .blank__box {
+  height: 522px;
+  width: 100%;
+  overflow: scroll;
+  border: 1px solid #000;
+  /* border-top: 0px; */
+}
+.adjustments .hmBody__inner .row1 .col .cols-wrapper .col1 .box__inner {
+  height: 800px;
+  width: 100%;
+  background-color: #DBDBDB;
+}
+.adjustments .hmBody__inner .row1 .col .cols-wrapper .col1 .box__bottom table td {
+  height: 25px;
+}
+.adjustments .hmBody__inner .row1 .col .cols-wrapper .col1 .blank__box.bottom__box {
+  height: 200px;
+  width: 100%;
+}
+.adjustments .hmBody__inner .row1 .col .cols-wrapper .col1 .blank__box.bottom__box .box__inner {
+  width: 100%;
+}
+.adjustments .hmBody__inner .row1 .col .cols-wrapper .col1 .blank__box.bottom__box .box__inner table {
+  width: 100% !important;
 }
