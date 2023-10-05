@@ -798,6 +798,7 @@ a {
 }
 .dashboard__container__row__col2__wrapper__content-wrapper {
   margin-top: 3rem;
+  margin-bottom: 1rem;
   display: flex;
   align-items: flex-start;
   gap: 1.5rem;
