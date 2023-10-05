@@ -13,6 +13,61 @@ body {
   width: 100%;
 }
 
+@media screen and (min-height: 630px) and (orientation: portrait) {
+  body {
+    margin-bottom: 10rem;
+  }
+}
+@media screen and (min-width: 1163px) and (max-width: 1279px) {
+  body {
+    zoom: 1;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1399px) {
+  body {
+    zoom: 1;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1599px) {
+  body {
+    zoom: 1;
+  }
+}
+@media screen and (min-width: 1600px) and (max-width: 1705px) {
+  body {
+    zoom: 1;
+  }
+}
+@media screen and (min-width: 1706px) and (max-width: 1919px) {
+  body {
+    zoom: 1.14;
+  }
+}
+@media screen and (min-width: 1920px) and (max-width: 2500px) {
+  body {
+    zoom: 1.28;
+  }
+}
+@media screen and (min-width: 2501px) and (max-width: 2700px) {
+  body {
+    zoom: 1.7;
+  }
+}
+@media screen and (min-width: 2701px) and (max-width: 4500px) {
+  body {
+    zoom: 2.55;
+  }
+}
+@media screen and (min-width: 4501px) and (max-width: 5200px) {
+  body {
+    zoom: 3.4;
+  }
+}
+@media screen and (min-width: 5201px) and (max-height: 660px) {
+  body {
+    zoom: 4.4;
+  }
+}
 .accordion-item {
   background-color: transparent !important;
 }
@@ -465,7 +520,7 @@ a {
 }
 .dashboard__container__row__col1__wrapper .links .accordion .accordion-item .accordion-header .accordion-button i {
   margin-top: -0.1rem;
-  font-size: 0.8rem;
+  font-size: 1.4rem;
 }
 @media (max-width: 575px) {
   .dashboard__container__row__col1__wrapper .links .accordion .accordion-item .accordion-header .accordion-button i {
@@ -493,7 +548,7 @@ a {
   }
 }
 .dashboard__container__row__col1__wrapper .links .accordion .accordion-item .accordion-header .accordion-button span {
-  font-size: 0.5rem;
+  font-size: 0.95rem;
 }
 @media (max-width: 575px) {
   .dashboard__container__row__col1__wrapper .links .accordion .accordion-item .accordion-header .accordion-button span {
@@ -528,6 +583,7 @@ a {
 }
 .dashboard__container__row__col1__wrapper .links .accordion .accordion-item .accordion-collapse .accordion-body .wrapper span {
   font-weight: 500 !important;
+  font-size: 1rem;
   padding: 0.9rem 1rem;
   text-align: center;
   border-radius: 30px;
@@ -612,7 +668,7 @@ a {
 }
 .dashboard__container__row__col1__wrapper .links .link a i {
   margin-top: -0.1rem;
-  font-size: 0.8rem;
+  font-size: 1.4rem;
 }
 @media (max-width: 575px) {
   .dashboard__container__row__col1__wrapper .links .link a i {
@@ -640,7 +696,7 @@ a {
   }
 }
 .dashboard__container__row__col1__wrapper .links .link a span {
-  font-size: 0.5rem;
+  font-size: 0.95rem;
 }
 @media (max-width: 575px) {
   .dashboard__container__row__col1__wrapper .links .link a span {
@@ -688,7 +744,7 @@ a {
 }
 .dashboard__container__row__col1__wrapper .links .sign-out a i {
   margin-top: -0.1rem;
-  font-size: 0.8rem;
+  font-size: 1.4rem;
 }
 @media (max-width: 575px) {
   .dashboard__container__row__col1__wrapper .links .sign-out a i {
@@ -716,7 +772,7 @@ a {
   }
 }
 .dashboard__container__row__col1__wrapper .links .sign-out a span {
-  font-size: 0.5rem;
+  font-size: 0.95rem;
 }
 @media (max-width: 575px) {
   .dashboard__container__row__col1__wrapper .links .sign-out a span {
@@ -954,7 +1010,7 @@ a {
 }
 .count-receiving__container__row__col1__wrapper .links .accordion .accordion-item .accordion-header .accordion-button i {
   margin-top: -0.1rem;
-  font-size: 0.8rem;
+  font-size: 1.4rem;
 }
 @media (max-width: 575px) {
   .count-receiving__container__row__col1__wrapper .links .accordion .accordion-item .accordion-header .accordion-button i {
@@ -982,7 +1038,7 @@ a {
   }
 }
 .count-receiving__container__row__col1__wrapper .links .accordion .accordion-item .accordion-header .accordion-button span {
-  font-size: 0.5rem;
+  font-size: 0.95rem;
 }
 @media (max-width: 575px) {
   .count-receiving__container__row__col1__wrapper .links .accordion .accordion-item .accordion-header .accordion-button span {
@@ -1017,6 +1073,7 @@ a {
 }
 .count-receiving__container__row__col1__wrapper .links .accordion .accordion-item .accordion-collapse .accordion-body .wrapper span {
   font-weight: 500 !important;
+  font-size: 1rem;
   padding: 0.9rem 1rem;
   text-align: center;
   border-radius: 30px;
@@ -1101,7 +1158,7 @@ a {
 }
 .count-receiving__container__row__col1__wrapper .links .link a i {
   margin-top: -0.1rem;
-  font-size: 0.8rem;
+  font-size: 1.4rem;
 }
 @media (max-width: 575px) {
   .count-receiving__container__row__col1__wrapper .links .link a i {
@@ -1129,7 +1186,7 @@ a {
   }
 }
 .count-receiving__container__row__col1__wrapper .links .link a span {
-  font-size: 0.5rem;
+  font-size: 0.95rem;
 }
 @media (max-width: 575px) {
   .count-receiving__container__row__col1__wrapper .links .link a span {
@@ -1177,7 +1234,7 @@ a {
 }
 .count-receiving__container__row__col1__wrapper .links .sign-out a i {
   margin-top: -0.1rem;
-  font-size: 0.8rem;
+  font-size: 1.4rem;
 }
 @media (max-width: 575px) {
   .count-receiving__container__row__col1__wrapper .links .sign-out a i {
@@ -1205,7 +1262,7 @@ a {
   }
 }
 .count-receiving__container__row__col1__wrapper .links .sign-out a span {
-  font-size: 0.5rem;
+  font-size: 0.95rem;
 }
 @media (max-width: 575px) {
   .count-receiving__container__row__col1__wrapper .links .sign-out a span {
@@ -1498,7 +1555,7 @@ a {
 }
 .inbound-delivery__container__row__col1__wrapper .links .accordion .accordion-item .accordion-header .accordion-button i {
   margin-top: -0.1rem;
-  font-size: 0.8rem;
+  font-size: 1.4rem;
 }
 @media (max-width: 575px) {
   .inbound-delivery__container__row__col1__wrapper .links .accordion .accordion-item .accordion-header .accordion-button i {
@@ -1526,7 +1583,7 @@ a {
   }
 }
 .inbound-delivery__container__row__col1__wrapper .links .accordion .accordion-item .accordion-header .accordion-button span {
-  font-size: 0.5rem;
+  font-size: 0.95rem;
 }
 @media (max-width: 575px) {
   .inbound-delivery__container__row__col1__wrapper .links .accordion .accordion-item .accordion-header .accordion-button span {
@@ -1561,6 +1618,7 @@ a {
 }
 .inbound-delivery__container__row__col1__wrapper .links .accordion .accordion-item .accordion-collapse .accordion-body .wrapper span {
   font-weight: 500 !important;
+  font-size: 1rem;
   padding: 0.9rem 1rem;
   text-align: center;
   border-radius: 30px;
@@ -1645,7 +1703,7 @@ a {
 }
 .inbound-delivery__container__row__col1__wrapper .links .link a i {
   margin-top: -0.1rem;
-  font-size: 0.8rem;
+  font-size: 1.4rem;
 }
 @media (max-width: 575px) {
   .inbound-delivery__container__row__col1__wrapper .links .link a i {
@@ -1673,7 +1731,7 @@ a {
   }
 }
 .inbound-delivery__container__row__col1__wrapper .links .link a span {
-  font-size: 0.5rem;
+  font-size: 0.95rem;
 }
 @media (max-width: 575px) {
   .inbound-delivery__container__row__col1__wrapper .links .link a span {
@@ -1721,7 +1779,7 @@ a {
 }
 .inbound-delivery__container__row__col1__wrapper .links .sign-out a i {
   margin-top: -0.1rem;
-  font-size: 0.8rem;
+  font-size: 1.4rem;
 }
 @media (max-width: 575px) {
   .inbound-delivery__container__row__col1__wrapper .links .sign-out a i {
@@ -1749,7 +1807,7 @@ a {
   }
 }
 .inbound-delivery__container__row__col1__wrapper .links .sign-out a span {
-  font-size: 0.5rem;
+  font-size: 0.95rem;
 }
 @media (max-width: 575px) {
   .inbound-delivery__container__row__col1__wrapper .links .sign-out a span {
