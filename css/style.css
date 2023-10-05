@@ -1344,6 +1344,7 @@ a {
 }
 .count-receiving__container__row__col2__wrapper__content-wrapper {
   margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 @media (max-width: 767px) {
   .count-receiving__container__row__col2__wrapper__content-wrapper {
@@ -1889,6 +1890,7 @@ a {
 }
 .inbound-delivery__container__row__col2__wrapper__content-wrapper {
   margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 @media (max-width: 767px) {
   .inbound-delivery__container__row__col2__wrapper__content-wrapper {
